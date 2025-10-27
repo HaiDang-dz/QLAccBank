@@ -14,7 +14,7 @@ namespace QLAccBank
 {
     public partial class Frm_Add_Customer : Form
     {
-        public Customer returnCustomer { get; private set; } // Public property to hold the return value
+        public Customer returnCustomer { get; private set; } // hgiegeigiwgwq
 
         public Frm_Add_Customer()
         {
