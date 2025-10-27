@@ -33,7 +33,7 @@ namespace QLAccBank
             {
                 txtHoTen.Enabled = false;
                 btnXacNhan.Text = "Cập nhật";
-                this.Text = "uhuhuuhuh";
+                this.Text = "Đoan đồ đạc";
 
                 txtMaKhachHang.Text = customer.CustomerID;
                 txtHoTen.Text = $"{customer.LastName} {customer.FirstName}";
