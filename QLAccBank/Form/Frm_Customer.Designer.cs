@@ -30,6 +30,7 @@
         {
             tlp_qlttkh = new TableLayoutPanel();
             panel1 = new Panel();
+            btt_QLTK = new Button();
             comboBox_gioitinh = new ComboBox();
             dtp_ngaysinh = new DateTimePicker();
             txt_cancuoc = new TextBox();
@@ -87,6 +88,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(btt_QLTK);
             panel1.Controls.Add(comboBox_gioitinh);
             panel1.Controls.Add(dtp_ngaysinh);
             panel1.Controls.Add(txt_cancuoc);
@@ -115,6 +117,17 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1051, 314);
             panel1.TabIndex = 1;
+            // 
+            // btt_QLTK
+            // 
+            btt_QLTK.Location = new Point(910, 266);
+            btt_QLTK.Margin = new Padding(2);
+            btt_QLTK.Name = "btt_QLTK";
+            btt_QLTK.Size = new Size(118, 34);
+            btt_QLTK.TabIndex = 8;
+            btt_QLTK.Text = "QL Tài khoản ";
+            btt_QLTK.UseVisualStyleBackColor = true;
+            btt_QLTK.Click += btt_QLTK_Click;
             // 
             // comboBox_gioitinh
             // 
@@ -258,7 +271,7 @@
             // 
             // txt_tim
             // 
-            txt_tim.Location = new Point(207, 268);
+            txt_tim.Location = new Point(203, 270);
             txt_tim.Margin = new Padding(2);
             txt_tim.Name = "txt_tim";
             txt_tim.Size = new Size(242, 27);
@@ -279,7 +292,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(804, 263);
+            button1.Location = new Point(800, 265);
             button1.Margin = new Padding(2);
             button1.Name = "button1";
             button1.Size = new Size(94, 34);
@@ -289,7 +302,7 @@
             // 
             // bt_update
             // 
-            bt_update.Location = new Point(693, 263);
+            bt_update.Location = new Point(689, 265);
             bt_update.Margin = new Padding(2);
             bt_update.Name = "bt_update";
             bt_update.Size = new Size(94, 34);
@@ -311,7 +324,7 @@
             // 
             // bt_xoa
             // 
-            bt_xoa.Location = new Point(578, 263);
+            bt_xoa.Location = new Point(574, 265);
             bt_xoa.Margin = new Padding(2);
             bt_xoa.Name = "bt_xoa";
             bt_xoa.Size = new Size(94, 34);
@@ -333,7 +346,7 @@
             // 
             // bt_them
             // 
-            bt_them.Location = new Point(467, 263);
+            bt_them.Location = new Point(463, 265);
             bt_them.Margin = new Padding(2);
             bt_them.Name = "bt_them";
             bt_them.Size = new Size(94, 34);
@@ -346,7 +359,7 @@
             // 
             lb_tim.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             lb_tim.AutoSize = true;
-            lb_tim.Location = new Point(85, 270);
+            lb_tim.Location = new Point(81, 272);
             lb_tim.Margin = new Padding(2, 0, 2, 0);
             lb_tim.Name = "lb_tim";
             lb_tim.Size = new Size(70, 20);
@@ -504,5 +517,6 @@
         private Button button1;
         private ComboBox comboBox_gioitinh;
         private DateTimePicker dtp_ngaysinh;
+        private Button btt_QLTK;
     }
 }

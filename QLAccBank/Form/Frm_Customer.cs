@@ -81,5 +81,17 @@ namespace QLAccBank
                 MessageBox.Show("Thêm khách hàng thành công!", "Thông báo");
             }
         }
+
+        private void btt_QLTK_Click(object sender, EventArgs e)
+        {
+            if (dgv_customer.CurrentRow == null)
+            {
+                MessageBox.Show("Vui lòng chọn một khách hàng trước khi xem tài khoản!",
+                                "Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Dừng lại, không mở form
+            }
+            Frm_BankAccount frm = new Frm_BankAccount();
+            frm.ShowDialog(); 
+        }
     }
 }
