@@ -1,0 +1,101 @@
+CustomerID,FirstName,LastName,Gender,DOB,PhoneNumber,Email,Address,IDCard
+CUST1,Đặng Hồng,Thảo,Nữ,1998-06-19,0978748910,danghongthao1@gmail.com,Nha Trang,195911866985
+CUST2,Nguyễn Thanh,Yến,Nam,1998-12-06,0959537520,nguyenthanhyen2@gmail.com,Đà Lạt,468438733334
+CUST3,Đỗ Thu,Trang,Nữ,1995-02-18,0964126313,dothutrang3@gmail.com,Hà Nội,827934768662
+CUST4,Võ Đức,Dương,Nam,1981-11-03,0919881321,voduCduong4@gmail.com,Hải Phòng,291128793233
+CUST5,Nguyễn Anh,Tùng,Nam,1982-02-04,0988947641,nguyenanhtung5@gmail.com,Đà Lạt,374975122589
+CUST6,Đỗ Thu,Phúc,Nam,1976-03-01,0982554340,dothuphuc6@gmail.com,Nha Trang,936897782113
+CUST7,Lê Văn,Yến,Nữ,2014-03-24,0964971120,levanyen7@gmail.com,Hải Phòng,614724116774
+CUST8,Võ Minh,Thảo,Nữ,1999-11-04,0974193271,vominhthao8@gmail.com,Hà Nội,134591549627
+CUST9,Hoàng Thị,Trang,Nam,1984-03-02,0939283620,hoangthitrang9@gmail.com,Nha Trang,512647575757
+CUST10,Bùi Minh,Quân,Nam,2024-01-22,0919164940,buiminhquan1@gmail.com,Đà Nẵng,644476651321
+CUST11,Đặng Trung,Linh,Nữ,1992-01-18,0978528900,dangtrunglinh11@gmail.com,Hà Nội,148769642568
+CUST12,Trần Anh,Huy,Nam,2001-07-02,0996866270,trananhhuy12@gmail.com,Đà Lạt,738535826843
+CUST13,Hoàng Anh,Huy,Nam,1988-11-12,0982487320,hoanganhhuy13@gmail.com,Đà Lạt,482473249156
+CUST14,Đặng Hồng,Khánh,Nam,1984-06-06,0994529900,danghongkhanh14@gmail.com,Đà Lạt,289263251748
+CUST15,Đặng Thanh,Quân,Nữ,1983-07-08,0984259625,dangthanhquan15@gmail.com,Đà Nẵng,359614188591
+CUST16,Bùi Đức,Thảo,Nữ,1994-09-05,0963935648,buiducthao16@gmail.com,Hà Nội,451988536472
+CUST17,Bùi Văn,Tùng,Nam,1998-06-06,0937959830,buivantung17@gmail.com,Cần Thơ,398615663224
+CUST18,Nguyễn Trung,Khánh,Nam,1987-11-12,0916163848,nguyentrungkhanh18@gmail.com,Hải Phòng,215342936791
+CUST19,Nguyễn Anh,Trang,Nam,1995-07-31,0919756811,nguyenanhtrang19@gmail.com,Hồ Chí Minh,511847994827
+CUST20,Đỗ Trung,Quân,Nam,1988-08-16,0937385232,dotrungquan2@gmail.com,Hà Nội,129569123849
+CUST21,Phạm Hồng,Phúc,Nam,1985-04-18,0948815267,phamhongphuc21@gmail.com,Đà Lạt,693485364194
+CUST22,Bùi Trung,Phúc,Nam,2022-08-09,0971823270,buitrungphuc22@gmail.com,Biên Hòa,291187421173
+CUST23,Phan Hồng,Quân,Nữ,1991-03-19,0933139571,phanhongquan23@gmail.com,Hồ Chí Minh,751429711463
+CUST24,Nguyễn Trung,Tùng,Nữ,1983-07-28,0977189190,nguyentrungtung24@gmail.com,Đà Lạt,913983454192
+CUST25,Phạm Ngọc,Linh,Nam,1993-05-11,0979823993,phamngoclinh25@gmail.com,Hồ Chí Minh,142488733245
+CUST26,Nguyễn Thu,Dương,Nam,1993-03-18,0988489840,nguyenthuduong26@gmail.com,Hồ Chí Minh,661458661793
+CUST27,Hoàng Trung,Trang,Nam,1977-04-25,0923134240,hoangtrungtrang27@gmail.com,Hải Phòng,388532345618
+CUST28,Nguyễn Minh,Phúc,Nữ,2016-12-24,0949465770,nguyenminhphuc28@gmail.com,Hồ Chí Minh,454887485372
+CUST29,Đặng Anh,Khánh,Nam,1979-09-21,0979977590,danganhkhanh29@gmail.com,Vũng Tàu,794351177661
+CUST30,Võ Trung,Thảo,Nam,1985-03-28,0955175300,votrungthao3@gmail.com,Hà Nội,549326278338
+CUST31,Võ Trung,Trang,Nữ,1990-01-29,0932332700,votrungtrang31@gmail.com,Cần Thơ,493732792197
+CUST32,Đặng Văn,Thảo,Nam,1975-08-08,0961424327,dangvanthao32@gmail.com,Huế,241946997441
+CUST33,Đặng Trung,Yến,Nam,1988-11-23,0988217435,dangtrungyen33@gmail.com,Biên Hòa,487519442846
+CUST34,Lê Ngọc,Trang,Nữ,1987-02-07,0986462240,lengoctrang34@gmail.com,Hồ Chí Minh,845938225361
+CUST35,Hoàng Thanh,Tùng,Nam,1979-01-01,0942125519,hoangthanhtung35@gmail.com,Nha Trang,158946753742
+CUST36,Bùi Thu,Linh,Nam,1990-08-02,0965221515,buithulinh36@gmail.com,Đà Lạt,519938442965
+CUST37,Đỗ Thanh,Huy,Nữ,1994-01-04,0994598539,dothanhhuy37@gmail.com,Hải Phòng,362658751849
+CUST38,Đặng Hồng,Yến,Nữ,1976-12-22,0966473120,danghongyen38@gmail.com,Hồ Chí Minh,193744722534
+CUST39,Nguyễn Anh,Huy,Nam,1983-09-22,0991948651,nguyenanhhuy39@gmail.com,Biên Hòa,694293233458
+CUST40,Lê Ngọc,Linh,Nam,1985-08-12,0928646594,lengoclinh4@gmail.com,Hải Phòng,827639495146
+CUST41,Nguyễn Trung,Thảo,Nam,1985-02-19,0914574819,nguyentrungthao41@gmail.com,Hải Phòng,659386539124
+CUST42,Phan Hồng,Khánh,Nữ,1983-03-16,0982214600,phanhongkhanh42@gmail.com,Nha Trang,128663954578
+CUST43,Trần Minh,Linh,Nữ,1979-07-09,0935929394,tranminhlinh43@gmail.com,Hà Nội,913286291583
+CUST44,Phạm Thị,Dương,Nữ,1987-11-26,0922681558,phamthiduong44@gmail.com,Huế,234755763945
+CUST45,Phan Thị,Dương,Nữ,1985-11-03,0988332140,phanthiduong45@gmail.com,Biên Hòa,549132187621
+CUST46,Nguyễn Thanh,Dương,Nữ,1975-03-23,0948987370,nguyenthanhduong46@gmail.com,Biên Hòa,451264757398
+CUST47,Võ Trung,Trang,Nam,1997-12-31,0918139600,votrungtrang47@gmail.com,Hà Nội,437158792561
+CUST48,Phạm Đức,Tùng,Nữ,1997-06-28,0931467622,phamductung48@gmail.com,Nha Trang,144327972849
+CUST49,Phan Minh,Linh,Nữ,1985-02-14,0948361890,phanminhlinh49@gmail.com,Đà Lạt,512318738794
+CUST50,Võ Minh,Huy,Nữ,1981-01-08,0913676986,vominhhuy5@gmail.com,Hà Nội,267419661458
+CUST51,Võ Đức,Thảo,Nữ,1986-09-09,0954777961,voduCcthao51@gmail.com,Biên Hòa,888972334517
+CUST52,Võ Thanh,Yến,Nam,1978-02-15,0949398912,vothanhyen52@gmail.com,Đà Lạt,581961958852
+CUST53,Đặng Thị,Phúc,Nữ,2012-09-02,0926339820,dangthiphuc53@gmail.com,Đà Lạt,729144967342
+CUST54,Lê Trung,Tùng,Nam,2022-01-04,0912326616,letrungtung54@gmail.com,Hải Phòng,184756569345
+CUST55,Phan Đức,Trang,Nữ,1978-01-02,0935336400,phanductrang55@gmail.com,Vũng Tàu,891356475983
+CUST56,Võ Minh,Phúc,Nữ,1995-09-13,0946478282,vominhphuc56@gmail.com,Vũng Tàu,977714175369
+CUST57,Trần Văn,Trang,Nữ,1997-11-17,0987112625,tranvantrang57@gmail.com,Đà Nẵng,776624613214
+CUST58,Bùi Thị,Trang,Nam,1996-01-29,0919426394,buithitrang58@gmail.com,Hà Nội,753592851947
+CUST59,Lê Trung,Yến,Nữ,1983-08-13,0988232190,letrungyen59@gmail.com,Vũng Tàu,517748865829
+CUST60,Phan Ngọc,Trang,Nữ,1994-02-11,0984762650,phanngoctrang6@gmail.com,Vũng Tàu,241561173958
+CUST61,Đỗ Văn,Phúc,Nam,1987-06-24,0956677317,dovanphuc61@gmail.com,Đà Nẵng,897771151624
+CUST62,Bùi Thu,Yến,Nữ,1986-01-02,0981633000,buithuyen62@gmail.com,Cần Thơ,541255913794
+CUST63,Nguyễn Trung,Tùng,Nữ,1992-05-03,0948441320,nguyentrungtung63@gmail.com,Hải Phòng,968851912437
+CUST64,Đỗ Đức,Phúc,Nam,1998-05-04,0912845130,doducphuc64@gmail.com,Nha Trang,743595191845
+CUST65,Đỗ Văn,Yến,Nam,1976-01-06,0979578111,dovanyen65@gmail.com,Hồ Chí Minh,179911663953
+CUST66,Phạm Minh,Phúc,Nữ,1975-09-03,0997464893,phamminhphuc66@gmail.com,Hải Phòng,961749924518
+CUST67,Hoàng Thanh,Yến,Nam,1993-11-07,0968677623,hoangthanhyen67@gmail.com,Đà Nẵng,315772565942
+CUST68,Đặng Thu,Phúc,Nam,1990-02-21,0943875254,dangthuphuc68@gmail.com,Hồ Chí Minh,658147517391
+CUST69,Võ Anh,Phúc,Nam,1993-04-21,0959414985,voanhphuc69@gmail.com,Biên Hòa,215472677259
+CUST70,Trần Minh,Thảo,Nam,2002-02-28,0998191591,tranminhthao7@gmail.com,Nha Trang,157655261184
+CUST71,Đỗ Ngọc,Trang,Nam,1976-11-02,0924388990,dongoctrang71@gmail.com,Biên Hòa,962658641372
+CUST72,Lê Đức,Thảo,Nữ,1980-06-22,0965989153,leduCcthao72@gmail.com,Huế,319429649581
+CUST73,Phan Hồng,Khánh,Nam,1990-08-12,0992346796,phanhongkhanh73@gmail.com,Biên Hòa,989388468725
+CUST74,Bùi Thanh,Khánh,Nam,1984-08-01,0939963350,buithanhkhanh74@gmail.com,Đà Lạt,784915354283
+CUST75,Phạm Đức,Tùng,Nam,1992-07-26,0987347600,phamductung75@gmail.com,Cần Thơ,134551415943
+CUST76,Lê Thu,Tùng,Nữ,2023-02-01,0993325273,lethutung76@gmail.com,Hải Phòng,751664349137
+CUST77,Võ Ngọc,Khánh,Nữ,1999-02-24,0957244736,vongockhanh77@gmail.com,Biên Hòa,825882281943
+CUST78,Lê Thị,Khánh,Nam,1996-01-05,0918988800,lethikhanh78@gmail.com,Nha Trang,487181831955
+CUST79,Lê Hồng,Tùng,Nữ,1990-01-02,0975129980,lehongtung79@gmail.com,Hà Nội,871143454692
+CUST80,Lê Đức,Linh,Nam,1998-12-05,0955249823,leduclinh8@gmail.com,Đà Lạt,259978229154
+CUST81,Phạm Thanh,Huy,Nam,1990-06-18,0996253720,phamthanhhuy81@gmail.com,Vũng Tàu,136611353347
+CUST82,Đặng Thu,Huy,Nam,1983-09-15,0958295810,dangthuhuy82@gmail.com,Hồ Chí Minh,418195318296
+CUST83,Đặng Minh,Dương,Nam,1986-02-24,0985637840,dangminhduong83@gmail.com,Hải Phòng,721573772894
+CUST84,Bùi Ngọc,Linh,Nữ,1994-02-06,0915316720,buingoclinh84@gmail.com,Hồ Chí Minh,972474359183
+CUST85,Trần Anh,Khánh,Nữ,1996-07-18,0985188770,trananhkhanh85@gmail.com,Hồ Chí Minh,457589635927
+CUST86,Phạm Thị,Linh,Nữ,1992-06-15,0972646510,phamthilinh86@gmail.com,Huế,939373792451
+CUST87,Bùi Trung,Thảo,Nam,1986-11-17,0916216946,buitrungthao87@gmail.com,Đà Lạt,415652157948
+CUST88,Bùi Thị,Yến,Nữ,2024-01-25,0954841230,buithiyen88@gmail.com,Biên Hòa,675678428193
+CUST89,Võ Minh,Tùng,Nam,2021-04-18,0972448634,vominhtung89@gmail.com,Hải Phòng,461131157924
+CUST90,Nguyễn Văn,Phúc,Nam,1979-05-22,0922299141,nguyenvanphuc9@gmail.com,Đà Nẵng,259227862518
+CUST91,Phan Minh,Linh,Nữ,1987-02-14,0925736815,phanminhlinh91@gmail.com,Đà Lạt,942252736715
+CUST92,Bùi Văn,Yến,Nữ,1976-01-29,0968715700,buivanyen92@gmail.com,Vũng Tàu,126252397486
+CUST93,Phạm Văn,Yến,Nữ,1982-09-26,0914384980,phamvanyen93@gmail.com,Nha Trang,735338469241
+CUST94,Trần Trung,Thảo,Nam,1999-08-06,0969519100,trantrungthao94@gmail.com,Hồ Chí Minh,879486117924
+CUST95,Phạm Thanh,Tùng,Nam,1975-11-23,0976788180,phamthanhtung95@gmail.com,Hồ Chí Minh,471938343267
+CUST96,Lê Minh,Khánh,Nữ,1991-02-02,0986935716,leminhkhanh96@gmail.com,Hồ Chí Minh,741633682958
+CUST97,Lê Đức,Dương,Nữ,1996-06-05,0949369970,leducdương97@gmail.com,Cần Thơ,671111454137
+CUST98,Hoàng Thị,Yến,Nữ,1992-01-03,0936325590,hoangthiyen98@gmail.com,Cần Thơ,316939194578
+CUST99,Phạm Đức,Tùng,Nữ,1991-01-15,0935661600,phamductung99@gmail.com,Đà Nẵng,549122295673
+CUST100,Phan Đức,Linh,Nữ,1975-01-08,0957779389,phanducclinh1@gmail.com,Hải Phòng,233919258417

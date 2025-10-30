@@ -1,0 +1,194 @@
+﻿TransactionID,CustomerID,AccountNumber,TransactionType,Amount,Date,Description
+T000001,CUST001,ACC000001,Gửi tiền,2.374.385 VNĐ,2019-06-13,Khách hàng nạp tiền vào tài khoản
+T000002,CUST001,ACC000001,Gửi tiền,8.823.600 VNĐ,2020-03-25,Khách hàng nạp tiền vào tài khoản
+T000003,CUST001,ACC000001,Nhận tiền,9.400.180 VNĐ,2021-07-22,Khách hàng nhận tiền từ tài khoản khác
+T000004,CUST001,ACC000001,Rút tiền,7.563.089 VNĐ,2023-04-09,Khách hàng rút tiền tại quầy hoặc ATM
+T000005,CUST001,ACC000001,Rút tiền,2.247.523 VNĐ,2020-09-29,Khách hàng rút tiền tại quầy hoặc ATM
+T000006,CUST001,ACC000001,Rút tiền,565.476 VNĐ,2019-09-05,Khách hàng rút tiền tại quầy hoặc ATM
+T000007,CUST002,ACC000002,Gửi tiền,4.569.227 VNĐ,2022-08-14,Khách hàng nạp tiền vào tài khoản
+T000008,CUST002,ACC000002,Nhận tiền,1.684.850 VNĐ,2024-06-16,Khách hàng nhận tiền từ tài khoản khác
+T000009,CUST002,ACC000002,Chuyển khoản,7.127.924 VNĐ,2018-12-23,Khách hàng chuyển tiền đến tài khoản khác
+T000010,CUST003,ACC000003,Gửi tiền,2.274.492 VNĐ,2022-04-19,Khách hàng nạp tiền vào tài khoản
+T000011,CUST003,ACC000003,Gửi tiền,9.570.385 VNĐ,2020-07-15,Khách hàng nạp tiền vào tài khoản
+T000012,CUST003,ACC000003,Nhận tiền,6.454.523 VNĐ,2024-07-11,Khách hàng nhận tiền từ tài khoản khác
+T000013,CUST003,ACC000003,Chuyển khoản,4.941.798 VNĐ,2022-07-23,Khách hàng chuyển tiền đến tài khoản khác
+T000014,CUST003,ACC000003,Chuyển khoản,6.817.494 VNĐ,2024-03-19,Khách hàng chuyển tiền đến tài khoản khác
+T000015,CUST003,ACC000003,Nhận tiền,5.146.055 VNĐ,2019-07-14,Khách hàng nhận tiền từ tài khoản khác
+T000016,CUST004,ACC000004,Rút tiền,6.668.153 VNĐ,2024-05-12,Khách hàng rút tiền tại quầy hoặc ATM
+T000017,CUST004,ACC000004,Chuyển khoản,6.547.070 VNĐ,2022-07-01,Khách hàng chuyển tiền đến tài khoản khác
+T000018,CUST004,ACC000004,Chuyển khoản,8.955.799 VNĐ,2022-05-24,Khách hàng chuyển tiền đến tài khoản khác
+T000019,CUST004,ACC000004,Chuyển khoản,3.967.209 VNĐ,2024-02-01,Khách hàng chuyển tiền đến tài khoản khác
+T000020,CUST004,ACC000004,Gửi tiền,4.981.414 VNĐ,2023-04-29,Khách hàng nạp tiền vào tài khoản
+T000021,CUST004,ACC000004,Gửi tiền,7.284.485 VNĐ,2023-12-15,Khách hàng nạp tiền vào tài khoản
+T000022,CUST004,ACC000004,Rút tiền,5.245.051 VNĐ,2018-06-01,Khách hàng rút tiền tại quầy hoặc ATM
+T000023,CUST004,ACC000004,Gửi tiền,995.509 VNĐ,2018-09-08,Khách hàng nạp tiền vào tài khoản
+T000024,CUST005,ACC000005,Gửi tiền,7.487.645 VNĐ,2022-08-30,Khách hàng nạp tiền vào tài khoản
+T000025,CUST005,ACC000005,Chuyển khoản,8.550.877 VNĐ,2020-08-02,Khách hàng chuyển tiền đến tài khoản khác
+T000026,CUST005,ACC000005,Chuyển khoản,4.758.998 VNĐ,2020-06-28,Khách hàng chuyển tiền đến tài khoản khác
+T000027,CUST005,ACC000005,Nhận tiền,671.086 VNĐ,2018-05-29,Khách hàng nhận tiền từ tài khoản khác
+T000028,CUST005,ACC000005,Nhận tiền,1.611.507 VNĐ,2021-08-17,Khách hàng nhận tiền từ tài khoản khác
+T000029,CUST006,ACC000006,Nhận tiền,9.507.283 VNĐ,2022-10-12,Khách hàng nhận tiền từ tài khoản khác
+T000030,CUST006,ACC000006,Nhận tiền,4.700.048 VNĐ,2018-08-16,Khách hàng nhận tiền từ tài khoản khác
+T000031,CUST006,ACC000006,Chuyển khoản,6.865.516 VNĐ,2024-07-15,Khách hàng chuyển tiền đến tài khoản khác
+T000032,CUST006,ACC000006,Nhận tiền,7.748.889 VNĐ,2019-01-14,Khách hàng nhận tiền từ tài khoản khác
+T000033,CUST007,ACC000007,Nhận tiền,819.536 VNĐ,2023-04-06,Khách hàng nhận tiền từ tài khoản khác
+T000034,CUST007,ACC000007,Rút tiền,1.784.752 VNĐ,2025-08-09,Khách hàng rút tiền tại quầy hoặc ATM
+T000035,CUST007,ACC000007,Chuyển khoản,8.530.105 VNĐ,2018-10-20,Khách hàng chuyển tiền đến tài khoản khác
+T000036,CUST007,ACC000007,Gửi tiền,3.571.588 VNĐ,2025-03-30,Khách hàng nạp tiền vào tài khoản
+T000037,CUST007,ACC000007,Chuyển khoản,513.813 VNĐ,2019-07-06,Khách hàng chuyển tiền đến tài khoản khác
+T000038,CUST007,ACC000007,Rút tiền,7.889.898 VNĐ,2019-03-21,Khách hàng rút tiền tại quầy hoặc ATM
+T000039,CUST007,ACC000007,Gửi tiền,1.575.367 VNĐ,2022-04-14,Khách hàng nạp tiền vào tài khoản
+T000040,CUST008,ACC000008,Gửi tiền,9.120.371 VNĐ,2019-04-17,Khách hàng nạp tiền vào tài khoản
+T000041,CUST008,ACC000008,Rút tiền,8.304.594 VNĐ,2019-09-26,Khách hàng rút tiền tại quầy hoặc ATM
+T000042,CUST008,ACC000008,Nhận tiền,5.249.746 VNĐ,2018-02-14,Khách hàng nhận tiền từ tài khoản khác
+T000043,CUST008,ACC000008,Chuyển khoản,718.412 VNĐ,2022-01-03,Khách hàng chuyển tiền đến tài khoản khác
+T000044,CUST008,ACC000008,Rút tiền,3.789.654 VNĐ,2019-02-13,Khách hàng rút tiền tại quầy hoặc ATM
+T000045,CUST008,ACC000008,Nhận tiền,1.923.404 VNĐ,2022-08-22,Khách hàng nhận tiền từ tài khoản khác
+T000046,CUST008,ACC000008,Nhận tiền,7.852.047 VNĐ,2020-08-27,Khách hàng nhận tiền từ tài khoản khác
+T000047,CUST008,ACC000008,Chuyển khoản,7.211.072 VNĐ,2021-10-17,Khách hàng chuyển tiền đến tài khoản khác
+T000048,CUST009,ACC000009,Gửi tiền,9.498.608 VNĐ,2020-05-28,Khách hàng nạp tiền vào tài khoản
+T000049,CUST009,ACC000009,Gửi tiền,632.629 VNĐ,2019-01-29,Khách hàng nạp tiền vào tài khoản
+T000050,CUST009,ACC000009,Gửi tiền,7.828.470 VNĐ,2022-01-23,Khách hàng nạp tiền vào tài khoản
+T000051,CUST009,ACC000009,Chuyển khoản,7.231.813 VNĐ,2019-12-17,Khách hàng chuyển tiền đến tài khoản khác
+T000052,CUST009,ACC000009,Rút tiền,762.747 VNĐ,2023-01-06,Khách hàng rút tiền tại quầy hoặc ATM
+T000053,CUST009,ACC000009,Chuyển khoản,2.316.145 VNĐ,2020-08-18,Khách hàng chuyển tiền đến tài khoản khác
+T000054,CUST009,ACC000009,Nhận tiền,3.244.112 VNĐ,2022-10-22,Khách hàng nhận tiền từ tài khoản khác
+T000055,CUST010,ACC000010,Rút tiền,7.632.406 VNĐ,2019-12-13,Khách hàng rút tiền tại quầy hoặc ATM
+T000056,CUST010,ACC000010,Gửi tiền,6.734.229 VNĐ,2024-04-21,Khách hàng nạp tiền vào tài khoản
+T000057,CUST010,ACC000010,Nhận tiền,6.721.053 VNĐ,2020-08-27,Khách hàng nhận tiền từ tài khoản khác
+T000058,CUST010,ACC000010,Rút tiền,3.761.999 VNĐ,2021-12-04,Khách hàng rút tiền tại quầy hoặc ATM
+T000059,CUST010,ACC000010,Chuyển khoản,5.194.331 VNĐ,2024-01-03,Khách hàng chuyển tiền đến tài khoản khác
+T000060,CUST011,ACC000011,Rút tiền,3.880.648 VNĐ,2022-08-02,Khách hàng rút tiền tại quầy hoặc ATM
+T000061,CUST011,ACC000011,Rút tiền,8.139.250 VNĐ,2019-10-11,Khách hàng rút tiền tại quầy hoặc ATM
+T000062,CUST011,ACC000011,Chuyển khoản,2.416.178 VNĐ,2023-05-03,Khách hàng chuyển tiền đến tài khoản khác
+T000063,CUST011,ACC000011,Gửi tiền,8.365.361 VNĐ,2023-01-16,Khách hàng nạp tiền vào tài khoản
+T000064,CUST012,ACC000012,Chuyển khoản,6.432.742 VNĐ,2019-12-17,Khách hàng chuyển tiền đến tài khoản khác
+T000065,CUST012,ACC000012,Gửi tiền,1.548.736 VNĐ,2019-06-28,Khách hàng nạp tiền vào tài khoản
+T000066,CUST012,ACC000012,Chuyển khoản,1.624.412 VNĐ,2023-03-18,Khách hàng chuyển tiền đến tài khoản khác
+T000067,CUST012,ACC000012,Rút tiền,3.087.801 VNĐ,2023-02-18,Khách hàng rút tiền tại quầy hoặc ATM
+T000068,CUST013,ACC000013,Nhận tiền,2.110.831 VNĐ,2018-01-03,Khách hàng nhận tiền từ tài khoản khác
+T000069,CUST013,ACC000013,Chuyển khoản,5.636.151 VNĐ,2019-04-24,Khách hàng chuyển tiền đến tài khoản khác
+T000070,CUST013,ACC000013,Chuyển khoản,9.930.123 VNĐ,2020-12-06,Khách hàng chuyển tiền đến tài khoản khác
+T000071,CUST013,ACC000013,Nhận tiền,5.588.988 VNĐ,2020-11-02,Khách hàng nhận tiền từ tài khoản khác
+T000072,CUST013,ACC000013,Chuyển khoản,4.120.425 VNĐ,2018-06-30,Khách hàng chuyển tiền đến tài khoản khác
+T000073,CUST013,ACC000013,Gửi tiền,6.190.599 VNĐ,2023-04-07,Khách hàng nạp tiền vào tài khoản
+T000074,CUST013,ACC000013,Gửi tiền,3.020.736 VNĐ,2025-06-08,Khách hàng nạp tiền vào tài khoản
+T000075,CUST014,ACC000014,Chuyển khoản,1.464.882 VNĐ,2019-03-21,Khách hàng chuyển tiền đến tài khoản khác
+T000076,CUST014,ACC000014,Rút tiền,2.202.141 VNĐ,2022-10-09,Khách hàng rút tiền tại quầy hoặc ATM
+T000077,CUST014,ACC000014,Nhận tiền,8.722.546 VNĐ,2025-06-26,Khách hàng nhận tiền từ tài khoản khác
+T000078,CUST015,ACC000015,Chuyển khoản,7.224.231 VNĐ,2024-05-17,Khách hàng chuyển tiền đến tài khoản khác
+T000079,CUST015,ACC000015,Rút tiền,8.950.136 VNĐ,2019-02-21,Khách hàng rút tiền tại quầy hoặc ATM
+T000080,CUST015,ACC000015,Rút tiền,5.604.969 VNĐ,2019-09-14,Khách hàng rút tiền tại quầy hoặc ATM
+T000081,CUST015,ACC000015,Rút tiền,5.531.070 VNĐ,2020-07-17,Khách hàng rút tiền tại quầy hoặc ATM
+T000082,CUST015,ACC000015,Nhận tiền,9.764.709 VNĐ,2024-05-07,Khách hàng nhận tiền từ tài khoản khác
+T000083,CUST015,ACC000015,Gửi tiền,5.839.193 VNĐ,2019-08-31,Khách hàng nạp tiền vào tài khoản
+T000084,CUST015,ACC000015,Chuyển khoản,1.807.560 VNĐ,2019-09-17,Khách hàng chuyển tiền đến tài khoản khác
+T000085,CUST015,ACC000015,Nhận tiền,6.204.823 VNĐ,2020-07-06,Khách hàng nhận tiền từ tài khoản khác
+T000086,CUST016,ACC000016,Nhận tiền,4.448.623 VNĐ,2018-06-14,Khách hàng nhận tiền từ tài khoản khác
+T000087,CUST016,ACC000016,Gửi tiền,1.366.373 VNĐ,2022-06-04,Khách hàng nạp tiền vào tài khoản
+T000088,CUST016,ACC000016,Chuyển khoản,4.930.685 VNĐ,2018-08-19,Khách hàng chuyển tiền đến tài khoản khác
+T000089,CUST016,ACC000016,Gửi tiền,5.845.137 VNĐ,2024-05-21,Khách hàng nạp tiền vào tài khoản
+T000090,CUST016,ACC000016,Chuyển khoản,1.103.860 VNĐ,2023-09-22,Khách hàng chuyển tiền đến tài khoản khác
+T000091,CUST016,ACC000016,Gửi tiền,6.680.348 VNĐ,2021-09-11,Khách hàng nạp tiền vào tài khoản
+T000092,CUST016,ACC000016,Gửi tiền,7.581.864 VNĐ,2018-05-31,Khách hàng nạp tiền vào tài khoản
+T000093,CUST016,ACC000016,Chuyển khoản,7.481.727 VNĐ,2018-12-02,Khách hàng chuyển tiền đến tài khoản khác
+T000094,CUST017,ACC000017,Gửi tiền,4.613.103 VNĐ,2021-06-04,Khách hàng nạp tiền vào tài khoản
+T000095,CUST017,ACC000017,Rút tiền,2.710.729 VNĐ,2023-04-02,Khách hàng rút tiền tại quầy hoặc ATM
+T000096,CUST017,ACC000017,Chuyển khoản,2.463.686 VNĐ,2020-04-11,Khách hàng chuyển tiền đến tài khoản khác
+T000097,CUST017,ACC000017,Chuyển khoản,548.149 VNĐ,2025-06-12,Khách hàng chuyển tiền đến tài khoản khác
+T000098,CUST018,ACC000018,Gửi tiền,7.692.254 VNĐ,2018-10-17,Khách hàng nạp tiền vào tài khoản
+T000099,CUST018,ACC000018,Chuyển khoản,3.849.618 VNĐ,2018-04-18,Khách hàng chuyển tiền đến tài khoản khác
+T000100,CUST018,ACC000018,Nhận tiền,5.998.882 VNĐ,2023-01-04,Khách hàng nhận tiền từ tài khoản khác
+T000101,CUST018,ACC000018,Rút tiền,7.884.176 VNĐ,2025-01-31,Khách hàng rút tiền tại quầy hoặc ATM
+T000102,CUST018,ACC000018,Chuyển khoản,6.926.663 VNĐ,2019-04-03,Khách hàng chuyển tiền đến tài khoản khác
+T000103,CUST018,ACC000018,Nhận tiền,4.152.217 VNĐ,2020-05-02,Khách hàng nhận tiền từ tài khoản khác
+T000104,CUST018,ACC000018,Rút tiền,4.001.297 VNĐ,2023-03-31,Khách hàng rút tiền tại quầy hoặc ATM
+T000105,CUST019,ACC000019,Rút tiền,6.572.299 VNĐ,2023-07-21,Khách hàng rút tiền tại quầy hoặc ATM
+T000106,CUST019,ACC000019,Nhận tiền,6.936.748 VNĐ,2022-04-03,Khách hàng nhận tiền từ tài khoản khác
+T000107,CUST019,ACC000019,Gửi tiền,4.446.243 VNĐ,2018-12-05,Khách hàng nạp tiền vào tài khoản
+T000108,CUST019,ACC000019,Gửi tiền,6.582.165 VNĐ,2022-07-12,Khách hàng nạp tiền vào tài khoản
+T000109,CUST019,ACC000019,Chuyển khoản,5.640.967 VNĐ,2020-08-21,Khách hàng chuyển tiền đến tài khoản khác
+T000110,CUST019,ACC000019,Nhận tiền,790.268 VNĐ,2022-07-25,Khách hàng nhận tiền từ tài khoản khác
+T000111,CUST019,ACC000019,Chuyển khoản,6.891.397 VNĐ,2023-05-07,Khách hàng chuyển tiền đến tài khoản khác
+T000112,CUST019,ACC000019,Chuyển khoản,8.495.086 VNĐ,2025-07-13,Khách hàng chuyển tiền đến tài khoản khác
+T000113,CUST020,ACC000020,Rút tiền,7.487.343 VNĐ,2019-01-04,Khách hàng rút tiền tại quầy hoặc ATM
+T000114,CUST020,ACC000020,Rút tiền,5.880.897 VNĐ,2019-06-15,Khách hàng rút tiền tại quầy hoặc ATM
+T000115,CUST020,ACC000020,Chuyển khoản,7.343.426 VNĐ,2020-02-15,Khách hàng chuyển tiền đến tài khoản khác
+T000116,CUST020,ACC000020,Chuyển khoản,3.628.800 VNĐ,2019-02-24,Khách hàng chuyển tiền đến tài khoản khác
+T000117,CUST020,ACC000020,Chuyển khoản,1.240.072 VNĐ,2023-11-22,Khách hàng chuyển tiền đến tài khoản khác
+T000118,CUST021,ACC000021,Rút tiền,6.166.920 VNĐ,2024-08-14,Khách hàng rút tiền tại quầy hoặc ATM
+T000119,CUST021,ACC000021,Rút tiền,5.617.420 VNĐ,2025-09-23,Khách hàng rút tiền tại quầy hoặc ATM
+T000120,CUST021,ACC000021,Chuyển khoản,3.120.824 VNĐ,2019-09-25,Khách hàng chuyển tiền đến tài khoản khác
+T000121,CUST021,ACC000021,Nhận tiền,7.326.302 VNĐ,2021-05-11,Khách hàng nhận tiền từ tài khoản khác
+T000122,CUST022,ACC000022,Rút tiền,5.065.951 VNĐ,2025-07-01,Khách hàng rút tiền tại quầy hoặc ATM
+T000123,CUST022,ACC000022,Chuyển khoản,1.730.061 VNĐ,2018-01-08,Khách hàng chuyển tiền đến tài khoản khác
+T000124,CUST022,ACC000022,Chuyển khoản,6.777.199 VNĐ,2018-08-23,Khách hàng chuyển tiền đến tài khoản khác
+T000125,CUST023,ACC000023,Chuyển khoản,4.358.159 VNĐ,2024-05-05,Khách hàng chuyển tiền đến tài khoản khác
+T000126,CUST023,ACC000023,Rút tiền,5.032.803 VNĐ,2018-05-25,Khách hàng rút tiền tại quầy hoặc ATM
+T000127,CUST023,ACC000023,Nhận tiền,3.030.566 VNĐ,2022-02-01,Khách hàng nhận tiền từ tài khoản khác
+T000128,CUST023,ACC000023,Gửi tiền,4.904.776 VNĐ,2021-07-12,Khách hàng nạp tiền vào tài khoản
+T000129,CUST023,ACC000023,Gửi tiền,8.390.489 VNĐ,2020-02-16,Khách hàng nạp tiền vào tài khoản
+T000130,CUST023,ACC000023,Gửi tiền,7.652.649 VNĐ,2025-01-08,Khách hàng nạp tiền vào tài khoản
+T000131,CUST023,ACC000023,Rút tiền,4.001.721 VNĐ,2018-06-01,Khách hàng rút tiền tại quầy hoặc ATM
+T000132,CUST024,ACC000024,Nhận tiền,5.848.698 VNĐ,2019-11-11,Khách hàng nhận tiền từ tài khoản khác
+T000133,CUST024,ACC000024,Chuyển khoản,1.488.654 VNĐ,2021-05-17,Khách hàng chuyển tiền đến tài khoản khác
+T000134,CUST024,ACC000024,Rút tiền,3.516.986 VNĐ,2021-06-12,Khách hàng rút tiền tại quầy hoặc ATM
+T000135,CUST024,ACC000024,Gửi tiền,1.341.380 VNĐ,2024-07-06,Khách hàng nạp tiền vào tài khoản
+T000136,CUST024,ACC000024,Nhận tiền,2.944.895 VNĐ,2024-01-05,Khách hàng nhận tiền từ tài khoản khác
+T000137,CUST024,ACC000024,Gửi tiền,6.330.693 VNĐ,2023-11-06,Khách hàng nạp tiền vào tài khoản
+T000138,CUST025,ACC000025,Gửi tiền,6.157.711 VNĐ,2020-06-24,Khách hàng nạp tiền vào tài khoản
+T000139,CUST025,ACC000025,Nhận tiền,1.558.761 VNĐ,2023-01-30,Khách hàng nhận tiền từ tài khoản khác
+T000140,CUST025,ACC000025,Gửi tiền,1.306.802 VNĐ,2024-10-11,Khách hàng nạp tiền vào tài khoản
+T000141,CUST025,ACC000025,Chuyển khoản,4.186.402 VNĐ,2018-03-27,Khách hàng chuyển tiền đến tài khoản khác
+T000142,CUST025,ACC000025,Nhận tiền,1.135.459 VNĐ,2019-05-22,Khách hàng nhận tiền từ tài khoản khác
+T000143,CUST026,ACC000026,Nhận tiền,3.016.536 VNĐ,2018-03-06,Khách hàng nhận tiền từ tài khoản khác
+T000144,CUST026,ACC000026,Chuyển khoản,4.721.115 VNĐ,2025-02-15,Khách hàng chuyển tiền đến tài khoản khác
+T000145,CUST026,ACC000026,Nhận tiền,9.820.884 VNĐ,2019-10-09,Khách hàng nhận tiền từ tài khoản khác
+T000146,CUST027,ACC000027,Rút tiền,7.490.037 VNĐ,2020-08-13,Khách hàng rút tiền tại quầy hoặc ATM
+T000147,CUST027,ACC000027,Nhận tiền,6.627.737 VNĐ,2018-11-20,Khách hàng nhận tiền từ tài khoản khác
+T000148,CUST027,ACC000027,Nhận tiền,2.352.677 VNĐ,2022-08-11,Khách hàng nhận tiền từ tài khoản khác
+T000149,CUST027,ACC000027,Rút tiền,2.616.824 VNĐ,2020-10-17,Khách hàng rút tiền tại quầy hoặc ATM
+T000150,CUST028,ACC000028,Chuyển khoản,3.534.785 VNĐ,2020-02-26,Khách hàng chuyển tiền đến tài khoản khác
+T000151,CUST028,ACC000028,Gửi tiền,8.088.268 VNĐ,2018-10-28,Khách hàng nạp tiền vào tài khoản
+T000152,CUST028,ACC000028,Nhận tiền,5.526.796 VNĐ,2019-10-21,Khách hàng nhận tiền từ tài khoản khác
+T000153,CUST029,ACC000029,Rút tiền,6.848.449 VNĐ,2019-03-16,Khách hàng rút tiền tại quầy hoặc ATM
+T000154,CUST029,ACC000029,Gửi tiền,7.785.263 VNĐ,2022-03-05,Khách hàng nạp tiền vào tài khoản
+T000155,CUST029,ACC000029,Chuyển khoản,6.886.664 VNĐ,2024-03-02,Khách hàng chuyển tiền đến tài khoản khác
+T000156,CUST029,ACC000029,Chuyển khoản,2.112.817 VNĐ,2025-08-30,Khách hàng chuyển tiền đến tài khoản khác
+T000157,CUST029,ACC000029,Chuyển khoản,1.609.098 VNĐ,2018-11-18,Khách hàng chuyển tiền đến tài khoản khác
+T000158,CUST029,ACC000029,Nhận tiền,9.215.015 VNĐ,2024-03-18,Khách hàng nhận tiền từ tài khoản khác
+T000159,CUST029,ACC000029,Chuyển khoản,4.273.761 VNĐ,2019-04-17,Khách hàng chuyển tiền đến tài khoản khác
+T000160,CUST029,ACC000029,Chuyển khoản,9.858.683 VNĐ,2021-11-10,Khách hàng chuyển tiền đến tài khoản khác
+T000161,CUST030,ACC000030,Gửi tiền,7.058.203 VNĐ,2022-04-07,Khách hàng nạp tiền vào tài khoản
+T000162,CUST030,ACC000030,Chuyển khoản,5.379.671 VNĐ,2024-01-17,Khách hàng chuyển tiền đến tài khoản khác
+T000163,CUST030,ACC000030,Rút tiền,5.910.348 VNĐ,2021-08-02,Khách hàng rút tiền tại quầy hoặc ATM
+T000164,CUST030,ACC000030,Nhận tiền,1.708.388 VNĐ,2022-01-04,Khách hàng nhận tiền từ tài khoản khác
+T000165,CUST030,ACC000030,Rút tiền,5.980.755 VNĐ,2021-10-02,Khách hàng rút tiền tại quầy hoặc ATM
+T000166,CUST030,ACC000030,Nhận tiền,5.850.137 VNĐ,2020-11-06,Khách hàng nhận tiền từ tài khoản khác
+T000167,CUST030,ACC000030,Chuyển khoản,7.339.333 VNĐ,2022-12-27,Khách hàng chuyển tiền đến tài khoản khác
+T000168,CUST030,ACC000030,Gửi tiền,3.403.058 VNĐ,2020-07-14,Khách hàng nạp tiền vào tài khoản
+T000169,CUST031,ACC000031,Gửi tiền,5.073.787 VNĐ,2022-08-03,Khách hàng nạp tiền vào tài khoản
+T000170,CUST031,ACC000031,Gửi tiền,7.786.117 VNĐ,2021-07-16,Khách hàng nạp tiền vào tài khoản
+T000171,CUST031,ACC000031,Nhận tiền,5.003.954 VNĐ,2025-05-16,Khách hàng nhận tiền từ tài khoản khác
+T000172,CUST031,ACC000031,Chuyển khoản,9.312.979 VNĐ,2018-08-23,Khách hàng chuyển tiền đến tài khoản khác
+T000173,CUST031,ACC000031,Nhận tiền,6.454.502 VNĐ,2021-05-28,Khách hàng nhận tiền từ tài khoản khác
+T000174,CUST031,ACC000031,Gửi tiền,4.292.501 VNĐ,2020-02-13,Khách hàng nạp tiền vào tài khoản
+T000175,CUST031,ACC000031,Gửi tiền,1.302.019 VNĐ,2021-08-30,Khách hàng nạp tiền vào tài khoản
+T000176,CUST032,ACC000032,Nhận tiền,3.621.285 VNĐ,2021-05-19,Khách hàng nhận tiền từ tài khoản khác
+T000177,CUST032,ACC000032,Rút tiền,5.031.635 VNĐ,2020-12-14,Khách hàng rút tiền tại quầy hoặc ATM
+T000178,CUST032,ACC000032,Rút tiền,2.404.869 VNĐ,2023-02-21,Khách hàng rút tiền tại quầy hoặc ATM
+T000179,CUST032,ACC000032,Nhận tiền,6.697.231 VNĐ,2019-05-19,Khách hàng nhận tiền từ tài khoản khác
+T000180,CUST032,ACC000032,Nhận tiền,8.381.825 VNĐ,2020-10-02,Khách hàng nhận tiền từ tài khoản khác
+T000181,CUST032,ACC000032,Chuyển khoản,3.775.812 VNĐ,2025-06-21,Khách hàng chuyển tiền đến tài khoản khác
+T000182,CUST032,ACC000032,Gửi tiền,7.173.547 VNĐ,2020-11-22,Khách hàng nạp tiền vào tài khoản
+T000183,CUST033,ACC000033,Gửi tiền,687.496 VNĐ,2018-11-09,Khách hàng nạp tiền vào tài khoản
+T000184,CUST033,ACC000033,Rút tiền,2.129.241 VNĐ,2023-11-10,Khách hàng rút tiền tại quầy hoặc ATM
+T000185,CUST033,ACC000033,Chuyển khoản,6.313.052 VNĐ,2020-10-29,Khách hàng chuyển tiền đến tài khoản khác
+T000186,CUST033,ACC000033,Rút tiền,9.805.072 VNĐ,2023-12-03,Khách hàng rút tiền tại quầy hoặc ATM
+T000187,CUST033,ACC000033,Nhận tiền,9.039.878 VNĐ,2022-06-11,Khách hàng nhận tiền từ tài khoản khác
+T000188,CUST033,ACC000033,Gửi tiền,6.405.181 VNĐ,2018-11-11,Khách hàng nạp tiền vào tài khoản
+T000189,C,ACC000034,Rút tiền,9.592.899 VNĐ,2021-06-26,Khách hàng rút tiền tại quầy hoặc ATM
+T000190,C,ACC000034,Chuyển khoản,5.713.644 VNĐ,2019-02-27,Khách hàng chuyển tiền đến tài khoản khác
+T000191,C,ACC000034,Rút tiền,9.309.828 VNĐ,2021-09-08,Khách hàng rút tiền tại quầy hoặc ATM
+T000192,C,ACC000034,Nhận tiền,6.390.672 VNĐ,2021-04-16,Khách hàng nhận tiền từ tài khoản khác
+T000193,C,ACC000034,Rút tiền,8.671.064 VNĐ,2020-08-24,Khách hàng rút tiền tại quầy hoặc ATM
