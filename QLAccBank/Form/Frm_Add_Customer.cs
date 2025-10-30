@@ -33,7 +33,7 @@ namespace QLAccBank
             {
                 txtHoTen.Enabled = false;
                 btnXacNhan.Text = "Cập nhật";
-                this.Text = "Đoan đồ đạc";
+                this.Text = "CẬP NHẬT KHÁCH HÀNG";
 
                 txtMaKhachHang.Text = customer.CustomerID;
                 txtHoTen.Text = $"{customer.LastName} {customer.FirstName}";
@@ -49,7 +49,6 @@ namespace QLAccBank
             returnCustomer = new Customer();
             returnCustomer.Email = txtEmail.Text;
             bool isEmail = returnCustomer.IsEmail();
-
             if (isEmail)
             {
                 var (ho, ten) = myString.TachHoTen(txtHoTen.Text);
@@ -57,10 +56,12 @@ namespace QLAccBank
                 returnCustomer.FirstName = ten;
                 returnCustomer.DOB = dateTimePickerDOB.Value.Date;
                 returnCustomer.PhoneNumber = txtSoDienThoai.Text;
-                returnCustomer.Gender = cboGioiTinh.SelectedIndex.ToString();
+                returnCustomer.Gender = cboGioiTinh.Text;
+                returnCustomer.Address = txtDiaChi.Text;
                 returnCustomer.IDCard = txtSoCanCuoc.Text;
-
-                DialogResult = DialogResult.OK;  // 🔹 báo cho form cha biết là “OK”
+                // Gán CustomerID từ textbox (đã tự động điền)
+                returnCustomer.CustomerID = txtMaKhachHang.Text;
+                DialogResult = DialogResult.OK;
                 this.Close();
             }
             else

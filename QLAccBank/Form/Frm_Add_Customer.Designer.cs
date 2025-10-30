@@ -45,6 +45,8 @@
             label7 = new Label();
             label6 = new Label();
             label3 = new Label();
+            label8 = new Label();
+            txtDiaChi = new TextBox();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -76,9 +78,11 @@
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(dateTimePickerDOB);
             groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(txtDiaChi);
             groupBox1.Controls.Add(txtEmail);
             groupBox1.Controls.Add(txtSoDienThoai);
             groupBox1.Controls.Add(txtHoTen);
+            groupBox1.Controls.Add(label8);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(label6);
@@ -94,9 +98,10 @@
             // 
             // btnHuy
             // 
-            btnHuy.Location = new Point(361, 266);
+            btnHuy.Font = new Font("Times New Roman", 15F);
+            btnHuy.Location = new Point(376, 320);
             btnHuy.Name = "btnHuy";
-            btnHuy.Size = new Size(94, 29);
+            btnHuy.Size = new Size(133, 37);
             btnHuy.TabIndex = 8;
             btnHuy.Text = "Hủy";
             btnHuy.UseVisualStyleBackColor = true;
@@ -104,9 +109,10 @@
             // 
             // btnXacNhan
             // 
-            btnXacNhan.Location = new Point(487, 266);
+            btnXacNhan.Font = new Font("Times New Roman", 15F);
+            btnXacNhan.Location = new Point(158, 320);
             btnXacNhan.Name = "btnXacNhan";
-            btnXacNhan.Size = new Size(94, 29);
+            btnXacNhan.Size = new Size(133, 37);
             btnXacNhan.TabIndex = 8;
             btnXacNhan.Text = "Xác nhận";
             btnXacNhan.UseVisualStyleBackColor = true;
@@ -126,7 +132,7 @@
             cboGioiTinh.Location = new Point(485, 87);
             cboGioiTinh.Margin = new Padding(3, 4, 3, 4);
             cboGioiTinh.Name = "cboGioiTinh";
-            cboGioiTinh.Size = new Size(118, 27);
+            cboGioiTinh.Size = new Size(154, 27);
             cboGioiTinh.TabIndex = 3;
             // 
             // label2
@@ -160,10 +166,10 @@
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(34, 268);
+            txtEmail.Location = new Point(376, 267);
             txtEmail.Margin = new Padding(3, 4, 3, 4);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(271, 27);
+            txtEmail.Size = new Size(312, 27);
             txtEmail.TabIndex = 7;
             // 
             // txtSoDienThoai
@@ -194,7 +200,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(34, 240);
+            label7.Location = new Point(378, 244);
             label7.Name = "label7";
             label7.Size = new Size(49, 19);
             label7.TabIndex = 0;
@@ -218,6 +224,23 @@
             label3.TabIndex = 0;
             label3.Text = "Điện thoại";
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(36, 244);
+            label8.Name = "label8";
+            label8.Size = new Size(58, 19);
+            label8.TabIndex = 0;
+            label8.Text = "Địa chỉ";
+            // 
+            // txtDiaChi
+            // 
+            txtDiaChi.Location = new Point(34, 267);
+            txtDiaChi.Margin = new Padding(3, 4, 3, 4);
+            txtDiaChi.Name = "txtDiaChi";
+            txtDiaChi.Size = new Size(277, 27);
+            txtDiaChi.TabIndex = 7;
+            // 
             // Frm_Add_Customer
             // 
             AutoScaleDimensions = new SizeF(9F, 19F);
@@ -235,7 +258,6 @@
 
         #endregion
         private Label label1;
-        private TextBox txtMaKhachHang;
         private GroupBox groupBox1;
         private ComboBox cboGioiTinh;
         private Label label2;
@@ -251,5 +273,8 @@
         private TextBox txtSoCanCuoc;
         private Button btnHuy;
         private Button btnXacNhan;
+        public TextBox txtMaKhachHang;
+        private TextBox txtDiaChi;
+        private Label label8;
     }
 }

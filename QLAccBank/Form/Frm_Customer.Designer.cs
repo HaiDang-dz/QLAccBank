@@ -47,9 +47,7 @@
             txt_tim = new TextBox();
             label3 = new Label();
             button1 = new Button();
-            bt_update = new Button();
             label2 = new Label();
-            bt_xoa = new Button();
             label1 = new Label();
             bt_them = new Button();
             lb_tim = new Label();
@@ -105,9 +103,7 @@
             panel1.Controls.Add(txt_tim);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(button1);
-            panel1.Controls.Add(bt_update);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(bt_xoa);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(bt_them);
             panel1.Controls.Add(lb_tim);
@@ -120,12 +116,12 @@
             // 
             // btt_QLTK
             // 
-            btt_QLTK.Location = new Point(910, 266);
+            btt_QLTK.Location = new Point(802, 265);
             btt_QLTK.Margin = new Padding(2);
             btt_QLTK.Name = "btt_QLTK";
-            btt_QLTK.Size = new Size(118, 34);
+            btt_QLTK.Size = new Size(184, 34);
             btt_QLTK.TabIndex = 8;
-            btt_QLTK.Text = "QL Tài khoản ";
+            btt_QLTK.Text = "Quản Lí Tài khoản ";
             btt_QLTK.UseVisualStyleBackColor = true;
             btt_QLTK.Click += btt_QLTK_Click;
             // 
@@ -292,23 +288,13 @@
             // 
             // button1
             // 
-            button1.Location = new Point(800, 265);
+            button1.Location = new Point(629, 265);
             button1.Margin = new Padding(2);
             button1.Name = "button1";
-            button1.Size = new Size(94, 34);
+            button1.Size = new Size(110, 34);
             button1.TabIndex = 4;
-            button1.Text = "Resert";
+            button1.Text = "Làm mới";
             button1.UseVisualStyleBackColor = true;
-            // 
-            // bt_update
-            // 
-            bt_update.Location = new Point(689, 265);
-            bt_update.Margin = new Padding(2);
-            bt_update.Name = "bt_update";
-            bt_update.Size = new Size(94, 34);
-            bt_update.TabIndex = 4;
-            bt_update.Text = "Update";
-            bt_update.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -321,16 +307,6 @@
             label2.TabIndex = 2;
             label2.Text = "Tên";
             label2.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // bt_xoa
-            // 
-            bt_xoa.Location = new Point(574, 265);
-            bt_xoa.Margin = new Padding(2);
-            bt_xoa.Name = "bt_xoa";
-            bt_xoa.Size = new Size(94, 34);
-            bt_xoa.TabIndex = 4;
-            bt_xoa.Text = "Delete";
-            bt_xoa.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -349,9 +325,9 @@
             bt_them.Location = new Point(463, 265);
             bt_them.Margin = new Padding(2);
             bt_them.Name = "bt_them";
-            bt_them.Size = new Size(94, 34);
+            bt_them.Size = new Size(117, 34);
             bt_them.TabIndex = 4;
-            bt_them.Text = "Add";
+            bt_them.Text = "Thêm";
             bt_them.UseVisualStyleBackColor = true;
             bt_them.Click += bt_them_Click_1;
             // 
@@ -486,8 +462,6 @@
         private TableLayoutPanel tlp_qlttkh;
         private DataGridView dgv_customer;
         private Panel panel1;
-        private Button bt_update;
-        private Button bt_xoa;
         private Button bt_them;
         private Label lb_tim;
         private TextBox txt_tim;
