@@ -2,10 +2,10 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="Form\Frm_Add_Customer.cs">
+    <Compile Update="Form\Frm_AddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\Frm_BankAccount.cs">
+    <Compile Update="Form\Frm_Add_Customer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form\Frm_Customer.cs">
@@ -17,10 +17,10 @@
     <Compile Update="Form\Frm_Members.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\Frm_Password.cs">
+    <Compile Update="Form\Frm_BankAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\Frm_AddEmployee.cs">
+    <Compile Update="Form\Frm_Password.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

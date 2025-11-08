@@ -68,7 +68,7 @@ namespace QLAccBank.Class
             }
             return cusList;
         }
-
+        public string FullName => LastName + " " + FirstName;
         public DataTable ToDataTable(List<Customer> Customers)
         {
             DataTable dt = new DataTable();
