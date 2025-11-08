@@ -162,6 +162,7 @@
             bt_exit.TabIndex = 3;
             bt_exit.Text = "Exit";
             bt_exit.UseVisualStyleBackColor = false;
+            bt_exit.Click += bt_exit_Click;
             // 
             // Frm_Login
             // 
@@ -174,6 +175,7 @@
             Controls.Add(panel1);
             Controls.Add(pictureBox1);
             Margin = new Padding(2);
+            MaximizeBox = false;
             Name = "Frm_Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Frm_Login";

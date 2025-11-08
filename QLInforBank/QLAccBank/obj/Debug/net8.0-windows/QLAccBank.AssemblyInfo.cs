@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QLAccBank")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fc6f906928e06e62b5ca13114e628201b2722f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63e4f5a8fea50eb68f98d977b609052b546f2a4a")]
 [assembly: System.Reflection.AssemblyProductAttribute("QLAccBank")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QLAccBank")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

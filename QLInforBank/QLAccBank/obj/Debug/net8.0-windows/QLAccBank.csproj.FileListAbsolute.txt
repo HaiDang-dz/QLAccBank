@@ -22,3 +22,29 @@ D:\OOP\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\refint\QLAccBank.dll
 D:\OOP\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.pdb
 D:\OOP\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.genruntimeconfig.cache
 D:\OOP\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\ref\QLAccBank.dll
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\bin\Debug\net8.0-windows\Data\customer.csv
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\bin\Debug\net8.0-windows\Data\HistoryTransactionFile.csv
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\bin\Debug\net8.0-windows\QLAccBank.exe
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\bin\Debug\net8.0-windows\QLAccBank.deps.json
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\bin\Debug\net8.0-windows\QLAccBank.runtimeconfig.json
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\bin\Debug\net8.0-windows\QLAccBank.dll
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\bin\Debug\net8.0-windows\QLAccBank.pdb
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.Frm_Add_Customer.resources
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.Frm_BankAccount.resources
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.Frm_Customer.resources
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.Frm_Login.resources
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.Frm_Members.resources
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.Properties.Resources.resources
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.csproj.GenerateResource.cache
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.GeneratedMSBuildEditorConfig.editorconfig
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.AssemblyInfoInputs.cache
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.AssemblyInfo.cs
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.csproj.CoreCompileInputs.cache
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.sourcelink.json
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.dll
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\refint\QLAccBank.dll
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.pdb
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.genruntimeconfig.cache
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\ref\QLAccBank.dll
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.Frm_Password.resources
+E:\School\Lập trình hướng đối tượng\source\repos\QLInforBank\QLAccBank\obj\Debug\net8.0-windows\QLAccBank.Frm_AddEmployee.resources
