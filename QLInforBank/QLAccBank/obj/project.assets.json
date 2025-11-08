@@ -8,24 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\nguye\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\source\\repos\\QLAccBank\\QLInforBank\\QLAccBank\\QLAccBank.csproj",
+      "projectUniqueName": "C:\\Users\\nguye\\source\\repos\\QLAccBank\\QLInforBank\\QLInforBank\\QLAccBank\\QLAccBank.csproj",
       "projectName": "QLAccBank",
-      "projectPath": "C:\\Users\\PC\\source\\repos\\QLAccBank\\QLInforBank\\QLAccBank\\QLAccBank.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\source\\repos\\QLAccBank\\QLInforBank\\QLAccBank\\obj\\",
+      "projectPath": "C:\\Users\\nguye\\source\\repos\\QLAccBank\\QLInforBank\\QLInforBank\\QLAccBank\\QLAccBank.csproj",
+      "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nguye\\source\\repos\\QLAccBank\\QLInforBank\\QLInforBank\\QLAccBank\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -50,96 +50,84 @@
             lb_tim = new Label();
             txt_loaiTK = new TextBox();
             txt_tthd = new TextBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgv_BankAccount).BeginInit();
             SuspendLayout();
             // 
             // lbe_STK
             // 
             lbe_STK.AutoSize = true;
-            lbe_STK.Location = new Point(65, 75);
-            lbe_STK.Margin = new Padding(4, 0, 4, 0);
+            lbe_STK.Location = new Point(52, 60);
             lbe_STK.Name = "lbe_STK";
-            lbe_STK.Size = new Size(116, 25);
+            lbe_STK.Size = new Size(95, 20);
             lbe_STK.TabIndex = 0;
             lbe_STK.Text = "Số tài khoản ";
             // 
             // lbe_MaKH
             // 
             lbe_MaKH.AutoSize = true;
-            lbe_MaKH.Location = new Point(65, 132);
-            lbe_MaKH.Margin = new Padding(4, 0, 4, 0);
+            lbe_MaKH.Location = new Point(52, 106);
             lbe_MaKH.Name = "lbe_MaKH";
-            lbe_MaKH.Size = new Size(133, 25);
+            lbe_MaKH.Size = new Size(109, 20);
             lbe_MaKH.TabIndex = 1;
             lbe_MaKH.Text = "Mã khách hàng";
             // 
             // lbe_SoDu
             // 
             lbe_SoDu.AutoSize = true;
-            lbe_SoDu.Location = new Point(65, 200);
-            lbe_SoDu.Margin = new Padding(4, 0, 4, 0);
+            lbe_SoDu.Location = new Point(52, 160);
             lbe_SoDu.Name = "lbe_SoDu";
-            lbe_SoDu.Size = new Size(60, 25);
+            lbe_SoDu.Size = new Size(48, 20);
             lbe_SoDu.TabIndex = 2;
             lbe_SoDu.Text = "Số dư";
             // 
             // lbe_LoaiTK
             // 
             lbe_LoaiTK.AutoSize = true;
-            lbe_LoaiTK.Location = new Point(631, 75);
-            lbe_LoaiTK.Margin = new Padding(4, 0, 4, 0);
+            lbe_LoaiTK.Location = new Point(505, 60);
             lbe_LoaiTK.Name = "lbe_LoaiTK";
-            lbe_LoaiTK.Size = new Size(127, 25);
+            lbe_LoaiTK.Size = new Size(106, 20);
             lbe_LoaiTK.TabIndex = 3;
             lbe_LoaiTK.Text = "Loại tài khoản ";
             // 
             // lbe_NgayMo
             // 
             lbe_NgayMo.AutoSize = true;
-            lbe_NgayMo.Location = new Point(631, 132);
-            lbe_NgayMo.Margin = new Padding(4, 0, 4, 0);
+            lbe_NgayMo.Location = new Point(505, 106);
             lbe_NgayMo.Name = "lbe_NgayMo";
-            lbe_NgayMo.Size = new Size(91, 25);
+            lbe_NgayMo.Size = new Size(74, 20);
             lbe_NgayMo.TabIndex = 4;
             lbe_NgayMo.Text = "Ngày mở ";
             // 
             // txt_STK
             // 
             txt_STK.Enabled = false;
-            txt_STK.Location = new Point(222, 71);
-            txt_STK.Margin = new Padding(4, 4, 4, 4);
+            txt_STK.Location = new Point(178, 57);
             txt_STK.Name = "txt_STK";
-            txt_STK.Size = new Size(373, 31);
+            txt_STK.Size = new Size(299, 27);
             txt_STK.TabIndex = 5;
             // 
             // txt_MaKH
             // 
             txt_MaKH.Enabled = false;
-            txt_MaKH.Location = new Point(222, 124);
-            txt_MaKH.Margin = new Padding(4, 4, 4, 4);
+            txt_MaKH.Location = new Point(178, 99);
             txt_MaKH.Name = "txt_MaKH";
-            txt_MaKH.Size = new Size(373, 31);
+            txt_MaKH.Size = new Size(299, 27);
             txt_MaKH.TabIndex = 6;
             // 
             // txt_SoDu
             // 
             txt_SoDu.Enabled = false;
-            txt_SoDu.Location = new Point(222, 196);
-            txt_SoDu.Margin = new Padding(4, 4, 4, 4);
+            txt_SoDu.Location = new Point(178, 157);
             txt_SoDu.Name = "txt_SoDu";
-            txt_SoDu.Size = new Size(373, 31);
+            txt_SoDu.Size = new Size(299, 27);
             txt_SoDu.TabIndex = 7;
             // 
             // datetime
             // 
             datetime.Enabled = false;
-            datetime.Location = new Point(832, 126);
-            datetime.Margin = new Padding(4, 4, 4, 4);
+            datetime.Location = new Point(666, 101);
             datetime.Name = "datetime";
-            datetime.Size = new Size(373, 31);
+            datetime.Size = new Size(299, 27);
             datetime.TabIndex = 10;
             // 
             // dgv_BankAccount
@@ -147,12 +135,11 @@
             dgv_BankAccount.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgv_BankAccount.Columns.AddRange(new DataGridViewColumn[] { AccountNumber, CustomerID, CustomerName, AccountType, Balance, OpenDate, IsActive });
             dgv_BankAccount.Dock = DockStyle.Bottom;
-            dgv_BankAccount.Location = new Point(0, 405);
-            dgv_BankAccount.Margin = new Padding(4, 4, 4, 4);
+            dgv_BankAccount.Location = new Point(0, 324);
             dgv_BankAccount.Name = "dgv_BankAccount";
             dgv_BankAccount.ReadOnly = true;
             dgv_BankAccount.RowHeadersWidth = 51;
-            dgv_BankAccount.Size = new Size(1305, 366);
+            dgv_BankAccount.Size = new Size(1044, 293);
             dgv_BankAccount.TabIndex = 12;
             dgv_BankAccount.CellEnter += dgv_BankAccount_CellEnter;
             dgv_BankAccount.CellFormatting += dgv_BankAccount_CellFormatting;
@@ -223,29 +210,28 @@
             // lbe_TrangThai
             // 
             lbe_TrangThai.AutoSize = true;
-            lbe_TrangThai.Location = new Point(631, 194);
-            lbe_TrangThai.Margin = new Padding(4, 0, 4, 0);
+            lbe_TrangThai.Location = new Point(505, 155);
             lbe_TrangThai.Name = "lbe_TrangThai";
-            lbe_TrangThai.Size = new Size(183, 25);
+            lbe_TrangThai.Size = new Size(152, 20);
             lbe_TrangThai.TabIndex = 13;
             lbe_TrangThai.Text = "Trạng thái hoạt động ";
             // 
             // txt_tim
             // 
-            txt_tim.Location = new Point(222, 314);
+            txt_tim.Location = new Point(178, 251);
             txt_tim.Margin = new Padding(2);
             txt_tim.Name = "txt_tim";
-            txt_tim.Size = new Size(375, 31);
+            txt_tim.Size = new Size(301, 27);
             txt_tim.TabIndex = 20;
             txt_tim.TextChanged += txt_tim_TextChanged;
             // 
             // lb_tim
             // 
             lb_tim.AutoSize = true;
-            lb_tim.Location = new Point(65, 319);
+            lb_tim.Location = new Point(52, 255);
             lb_tim.Margin = new Padding(2, 0, 2, 0);
             lb_tim.Name = "lb_tim";
-            lb_tim.Size = new Size(84, 25);
+            lb_tim.Size = new Size(70, 20);
             lb_tim.TabIndex = 15;
             lb_tim.Text = "Tìm kiếm";
             lb_tim.TextAlign = ContentAlignment.MiddleCenter;
@@ -253,53 +239,24 @@
             // txt_loaiTK
             // 
             txt_loaiTK.Enabled = false;
-            txt_loaiTK.Location = new Point(832, 69);
-            txt_loaiTK.Margin = new Padding(4, 4, 4, 4);
+            txt_loaiTK.Location = new Point(666, 55);
             txt_loaiTK.Name = "txt_loaiTK";
-            txt_loaiTK.Size = new Size(373, 31);
+            txt_loaiTK.Size = new Size(299, 27);
             txt_loaiTK.TabIndex = 6;
             // 
             // txt_tthd
             // 
             txt_tthd.Enabled = false;
-            txt_tthd.Location = new Point(832, 191);
-            txt_tthd.Margin = new Padding(4, 4, 4, 4);
+            txt_tthd.Location = new Point(666, 153);
             txt_tthd.Name = "txt_tthd";
-            txt_tthd.Size = new Size(373, 31);
+            txt_tthd.Size = new Size(299, 27);
             txt_tthd.TabIndex = 6;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(692, 280);
-            textBox1.Margin = new Padding(4, 4, 4, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(155, 31);
-            textBox1.TabIndex = 21;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(452, 277);
-            textBox2.Margin = new Padding(4);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(155, 31);
-            textBox2.TabIndex = 21;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(964, 277);
-            textBox3.Margin = new Padding(4);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(155, 31);
-            textBox3.TabIndex = 21;
             // 
             // Frm_BankAccount
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1305, 771);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            ClientSize = new Size(1044, 617);
             Controls.Add(txt_tim);
             Controls.Add(lb_tim);
             Controls.Add(lbe_TrangThai);
@@ -315,7 +272,6 @@
             Controls.Add(lbe_SoDu);
             Controls.Add(lbe_MaKH);
             Controls.Add(lbe_STK);
-            Margin = new Padding(4, 4, 4, 4);
             Name = "Frm_BankAccount";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Thông Tin Tài Khoản";
@@ -355,8 +311,5 @@
         private DataGridViewTextBoxColumn IsActive;
         private TextBox txt_loaiTK;
         private TextBox txt_tthd;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
     }
 }
