@@ -33,6 +33,7 @@ namespace QLAccBank
             Customer c = new Customer();
             cusList = c.GetListFormCSV();   // load toàn bộ dữ liệu lúc đầu
             dgv_customer.DataSource = cusList;
+            bt_capnhat.Enabled = false;
         }
         private void txt_tim_TextChanged_1(object sender, EventArgs e)
         {
@@ -158,7 +159,7 @@ namespace QLAccBank
                                 "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return; // Dừng lại, không mở form
             }
-            Frm_BankAccount frm = new Frm_BankAccount();
+            Frm_AccountBank frm = new Frm_AccountBank();
             frm.ShowDialog();
         }
 
@@ -205,6 +206,15 @@ namespace QLAccBank
             {
                 // 🟢 Sửa khách hàng
                 MessageBox.Show($"Sửa khách hàng {customerID}");
+                txt_cancuoc.Enabled = true;
+                txt_diachi.Enabled = true;
+                txt_email.Enabled = true;
+                txt_hodem.Enabled = true;
+                txt_sdt.Enabled = true;
+                txt_ten.Enabled = true;
+                comboBox_gioitinh.Enabled = true;
+                dtp_ngaysinh.Enabled = true;
+                bt_capnhat.Enabled = true;
             }
             else if (mouseX >= deleteStart && mouseX < deleteStart + 16)
             {
@@ -225,6 +235,56 @@ namespace QLAccBank
                     }
                 }
             }
+        }
+
+        private void bt_capnhat_Click(object sender, EventArgs e)
+        {
+            // Lấy CustomerID của dòng đang chọn
+            string customerID = dgv_customer.CurrentRow.Cells["CustomerID"].Value.ToString();
+
+            // Tìm đối tượng Customer trong cusList
+            Customer cusToUpdate = cusList.FirstOrDefault(c => c.CustomerID == customerID);
+            if (cusToUpdate == null)
+            {
+                MessageBox.Show("Không tìm thấy khách hàng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Cập nhật thông tin từ TextBox/ComboBox/DatePicker
+            cusToUpdate.FirstName = txt_hodem.Text.Trim();
+            cusToUpdate.LastName = txt_ten.Text.Trim();
+            cusToUpdate.Gender = comboBox_gioitinh.SelectedItem?.ToString() ?? "";
+            cusToUpdate.DOB = dtp_ngaysinh.Value; // nếu DOB là DateTime, nếu DOB là string thì .ToString("yyyy-MM-dd")
+            cusToUpdate.PhoneNumber = txt_sdt.Text.Trim();
+            cusToUpdate.Email = txt_email.Text.Trim();
+            cusToUpdate.Address = txt_diachi.Text.Trim();
+            cusToUpdate.IDCard = txt_cancuoc.Text.Trim();
+
+            // Refresh DataGridView
+            dgv_customer.DataSource = null;
+            dgv_customer.DataSource = cusList;
+
+            // Lưu CSV
+            string filePath = Path.Combine(Application.StartupPath, "customers.csv");
+            saveListToCSV(dgv_customer, filePath);
+
+            MessageBox.Show("Cập nhật khách hàng thành công!", "Thông báo");
+
+            // Tắt enable các TextBox và nút cập nhật
+            txt_hodem.Enabled = false;
+            txt_ten.Enabled = false;
+            comboBox_gioitinh.Enabled = false;
+            dtp_ngaysinh.Enabled = false;
+            txt_sdt.Enabled = false;
+            txt_email.Enabled = false;
+            txt_diachi.Enabled = false;
+            txt_cancuoc.Enabled = false;
+            bt_capnhat.Enabled = false;
+        }
+
+        private void bt_thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

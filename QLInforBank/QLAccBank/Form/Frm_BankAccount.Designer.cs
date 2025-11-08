@@ -292,7 +292,7 @@
         private TextBox txt_MaKH;
         private TextBox txt_SoDu;
         private DateTimePicker datetime;
-        private DataGridView dgv_BankAccount;
+        public DataGridView dgv_BankAccount;
         private Label lbe_TrangThai;
         private Button btt_QLTK;
         private TextBox txt_tim;

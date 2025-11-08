@@ -1,4 +1,4 @@
-﻿using QLAccBank.Class;
+﻿ using QLAccBank.Class;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -44,6 +44,22 @@ namespace QLAccBank
             }
         }
 
+        private void TaoSoTaiKhoan()
+        {
+            if (combobox_loaithe.SelectedIndex == -1) return; // Chưa chọn loại thẻ
+            string prefix = "232";
+            if (combobox_loaithe.Text == "thanh toán")
+                prefix += "01";
+            else if (combobox_loaithe.Text == "tính dụng")
+                prefix += "02";
+            else if (combobox_loaithe.Text == "tiết kiệm")
+                prefix += "03";
+
+            Random rand = new Random();
+            string randomNumber = rand.Next(0, 100000000).ToString("D8"); // 8 số
+            txt_sotaikhoan.Text = prefix + randomNumber;
+        }
+
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
             returnCustomer = new Customer();
@@ -69,11 +85,35 @@ namespace QLAccBank
                 returnCustomer = null;
                 MessageBox.Show("Email không hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            // Tạo tài khoản ngân hàng mới
+            // Tạo đối tượng BankAccount mới
+            BankAccount newAccount = new BankAccount();
+            newAccount.AccountNumber = txt_sotaikhoan.Text;       // Số tài khoản random
+            newAccount.AccountType = combobox_loaithe.Text;           // Loại tài khoản
+            newAccount.CustomerID = returnCustomer.CustomerID;  // Liên kết với Customer
+            newAccount.HoDem = returnCustomer.LastName;        // Họ đệm từ Customer
+            newAccount.Ten = returnCustomer.FirstName;         // Tên từ Customer
+            newAccount.Balance = 0;                             // Số dư mặc định
+            newAccount.OpenDate = DateTime.Now;                // Ngày mở tài khoản là hiện tại
+            newAccount.IsActive = true;                        // Mặc định tài khoản hoạt động
+
+            // Lưu vào Frm_BankAccount
+            Frm_AccountBank frmBank = Application.OpenForms.OfType<Frm_AccountBank>().FirstOrDefault();
+            if (frmBank != null)
+            {
+                frmBank.BankAccountList.Add(newAccount);
+                frmBank.UpdateDataGridView(); // Hàm refresh dgv_accountbank
+            }
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void combobox_loaithe_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TaoSoTaiKhoan();
         }
     }
 }

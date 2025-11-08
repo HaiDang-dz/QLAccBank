@@ -11,7 +11,7 @@
     {
         public partial class Frm_AccountBank : Form
         {
-            private List<BankAccount> BankAccountList = new List<BankAccount>();
+            public List<BankAccount> BankAccountList = new List<BankAccount>();
             public Frm_AccountBank()
             {
                 InitializeComponent();
@@ -35,7 +35,19 @@
                 IsActive.DataPropertyName = "IsActive";
             }
 
-            private void Frm_AccountBank_Load(object sender, EventArgs e)
+        public void UpdateDataGridView()
+        {
+            // Lấy danh sách khách hàng để hiển thị tên
+            Customer cus = new Customer();
+            List<Customer> customers = cus.GetListFormCSV();
+
+            BankAccount acc = new BankAccount();
+            DataTable dt = acc.ToDataTable(BankAccountList, customers); // tạo DataTable ghép tên KH
+
+            dgv_BankAccount.DataSource = dt;
+        }
+
+        private void Frm_AccountBank_Load(object sender, EventArgs e)
             {
                 Customer cus = new Customer();
                 List<Customer> customers = cus.GetListFormCSV(); // 🔹 Lấy danh sách khách hàng

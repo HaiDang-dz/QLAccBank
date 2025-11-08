@@ -46,15 +46,15 @@
             label4 = new Label();
             txt_tim = new TextBox();
             label3 = new Label();
-            button1 = new Button();
+            bt_capnhat = new Button();
             label2 = new Label();
             label1 = new Label();
             bt_them = new Button();
             lb_tim = new Label();
             dgv_customer = new DataGridView();
             CustomerID = new DataGridViewTextBoxColumn();
-            LastName = new DataGridViewTextBoxColumn();
             FirstName = new DataGridViewTextBoxColumn();
+            LastName = new DataGridViewTextBoxColumn();
             Gender = new DataGridViewTextBoxColumn();
             DOB = new DataGridViewTextBoxColumn();
             PhoneNumber = new DataGridViewTextBoxColumn();
@@ -62,6 +62,7 @@
             Address = new DataGridViewTextBoxColumn();
             IDCard = new DataGridViewTextBoxColumn();
             Action = new DataGridViewTextBoxColumn();
+            bt_thoat = new Button();
             tlp_qlttkh.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_customer).BeginInit();
@@ -87,6 +88,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(bt_thoat);
             panel1.Controls.Add(btt_QLTK);
             panel1.Controls.Add(comboBox_gioitinh);
             panel1.Controls.Add(dtp_ngaysinh);
@@ -103,7 +105,7 @@
             panel1.Controls.Add(label4);
             panel1.Controls.Add(txt_tim);
             panel1.Controls.Add(label3);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(bt_capnhat);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(bt_them);
@@ -117,10 +119,10 @@
             // 
             // btt_QLTK
             // 
-            btt_QLTK.Location = new Point(1002, 331);
+            btt_QLTK.Location = new Point(1125, 332);
             btt_QLTK.Margin = new Padding(2);
             btt_QLTK.Name = "btt_QLTK";
-            btt_QLTK.Size = new Size(230, 42);
+            btt_QLTK.Size = new Size(163, 42);
             btt_QLTK.TabIndex = 8;
             btt_QLTK.Text = "Quản Lí Tài khoản ";
             btt_QLTK.UseVisualStyleBackColor = true;
@@ -287,15 +289,16 @@
             label3.Text = "Ngày sinh";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // bt_capnhat
             // 
-            button1.Location = new Point(786, 331);
-            button1.Margin = new Padding(2);
-            button1.Name = "button1";
-            button1.Size = new Size(138, 42);
-            button1.TabIndex = 4;
-            button1.Text = "Làm mới";
-            button1.UseVisualStyleBackColor = true;
+            bt_capnhat.Location = new Point(794, 331);
+            bt_capnhat.Margin = new Padding(2);
+            bt_capnhat.Name = "bt_capnhat";
+            bt_capnhat.Size = new Size(138, 42);
+            bt_capnhat.TabIndex = 4;
+            bt_capnhat.Text = "Cập nhật";
+            bt_capnhat.UseVisualStyleBackColor = true;
+            bt_capnhat.Click += bt_capnhat_Click;
             // 
             // label2
             // 
@@ -323,7 +326,7 @@
             // 
             // bt_them
             // 
-            bt_them.Location = new Point(579, 331);
+            bt_them.Location = new Point(607, 331);
             bt_them.Margin = new Padding(2);
             bt_them.Name = "bt_them";
             bt_them.Size = new Size(146, 42);
@@ -349,7 +352,7 @@
             dgv_customer.AllowUserToAddRows = false;
             dgv_customer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgv_customer.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_customer.Columns.AddRange(new DataGridViewColumn[] { CustomerID, LastName, FirstName, Gender, DOB, PhoneNumber, Email, Address, IDCard, Action });
+            dgv_customer.Columns.AddRange(new DataGridViewColumn[] { CustomerID, FirstName, LastName, Gender, DOB, PhoneNumber, Email, Address, IDCard, Action });
             dgv_customer.Location = new Point(2, 399);
             dgv_customer.Margin = new Padding(2);
             dgv_customer.Name = "dgv_customer";
@@ -372,25 +375,25 @@
             CustomerID.Name = "CustomerID";
             CustomerID.ReadOnly = true;
             // 
-            // LastName
-            // 
-            LastName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            LastName.DataPropertyName = "LastName";
-            LastName.FillWeight = 20F;
-            LastName.HeaderText = "Họ đệm";
-            LastName.MinimumWidth = 8;
-            LastName.Name = "LastName";
-            LastName.ReadOnly = true;
-            // 
             // FirstName
             // 
             FirstName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             FirstName.DataPropertyName = "FirstName";
-            FirstName.FillWeight = 10F;
-            FirstName.HeaderText = "Tên";
+            FirstName.FillWeight = 20F;
+            FirstName.HeaderText = "Họ đệm";
             FirstName.MinimumWidth = 8;
             FirstName.Name = "FirstName";
             FirstName.ReadOnly = true;
+            // 
+            // LastName
+            // 
+            LastName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            LastName.DataPropertyName = "LastName";
+            LastName.FillWeight = 10F;
+            LastName.HeaderText = "Tên";
+            LastName.MinimumWidth = 8;
+            LastName.Name = "LastName";
+            LastName.ReadOnly = true;
             // 
             // Gender
             // 
@@ -457,8 +460,19 @@
             Action.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             Action.FillWeight = 13F;
             Action.HeaderText = "";
+            Action.MinimumWidth = 8;
             Action.Name = "Action";
             Action.ReadOnly = true;
+            // 
+            // bt_thoat
+            // 
+            bt_thoat.Location = new Point(963, 331);
+            bt_thoat.Name = "bt_thoat";
+            bt_thoat.Size = new Size(138, 42);
+            bt_thoat.TabIndex = 9;
+            bt_thoat.Text = "Thoát";
+            bt_thoat.UseVisualStyleBackColor = true;
+            bt_thoat.Click += bt_thoat_Click;
             // 
             // Frm_Customer
             // 
@@ -500,13 +514,13 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private Button button1;
+        private Button bt_capnhat;
         private ComboBox comboBox_gioitinh;
         private DateTimePicker dtp_ngaysinh;
         private Button btt_QLTK;
         private DataGridViewTextBoxColumn CustomerID;
-        private DataGridViewTextBoxColumn LastName;
         private DataGridViewTextBoxColumn FirstName;
+        private DataGridViewTextBoxColumn LastName;
         private DataGridViewTextBoxColumn Gender;
         private DataGridViewTextBoxColumn DOB;
         private DataGridViewTextBoxColumn PhoneNumber;
@@ -514,5 +528,6 @@
         private DataGridViewTextBoxColumn Address;
         private DataGridViewTextBoxColumn IDCard;
         private DataGridViewTextBoxColumn Action;
+        private Button bt_thoat;
     }
 }

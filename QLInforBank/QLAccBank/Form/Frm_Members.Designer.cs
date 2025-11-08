@@ -64,7 +64,7 @@
             lbe_ThongTinNhanVien.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 163);
             lbe_ThongTinNhanVien.Location = new Point(201, 9);
             lbe_ThongTinNhanVien.Name = "lbe_ThongTinNhanVien";
-            lbe_ThongTinNhanVien.Size = new Size(224, 28);
+            lbe_ThongTinNhanVien.Size = new Size(273, 32);
             lbe_ThongTinNhanVien.TabIndex = 1;
             lbe_ThongTinNhanVien.Text = "THÔNG TIN NHÂN VIÊN";
             // 
@@ -73,7 +73,7 @@
             lbe_HoVaTen.AutoSize = true;
             lbe_HoVaTen.Location = new Point(246, 71);
             lbe_HoVaTen.Name = "lbe_HoVaTen";
-            lbe_HoVaTen.Size = new Size(82, 20);
+            lbe_HoVaTen.Size = new Size(99, 25);
             lbe_HoVaTen.TabIndex = 2;
             lbe_HoVaTen.Text = "Họ và Tên: ";
             // 
@@ -82,7 +82,7 @@
             lbe_Gmail.AutoSize = true;
             lbe_Gmail.Location = new Point(246, 123);
             lbe_Gmail.Name = "lbe_Gmail";
-            lbe_Gmail.Size = new Size(53, 20);
+            lbe_Gmail.Size = new Size(63, 25);
             lbe_Gmail.TabIndex = 3;
             lbe_Gmail.Text = "Email: ";
             // 
@@ -91,7 +91,7 @@
             lbe_SDT.AutoSize = true;
             lbe_SDT.Location = new Point(246, 178);
             lbe_SDT.Name = "lbe_SDT";
-            lbe_SDT.Size = new Size(104, 20);
+            lbe_SDT.Size = new Size(126, 25);
             lbe_SDT.TabIndex = 4;
             lbe_SDT.Text = "Số điện thoại: ";
             // 
@@ -100,7 +100,7 @@
             lbe_ChucVu.AutoSize = true;
             lbe_ChucVu.Location = new Point(246, 230);
             lbe_ChucVu.Name = "lbe_ChucVu";
-            lbe_ChucVu.Size = new Size(64, 20);
+            lbe_ChucVu.Size = new Size(80, 25);
             lbe_ChucVu.TabIndex = 5;
             lbe_ChucVu.Text = "Chức vụ:";
             // 
@@ -109,7 +109,7 @@
             lbe_NgayVao.AutoSize = true;
             lbe_NgayVao.Location = new Point(246, 289);
             lbe_NgayVao.Name = "lbe_NgayVao";
-            lbe_NgayVao.Size = new Size(79, 20);
+            lbe_NgayVao.Size = new Size(97, 25);
             lbe_NgayVao.TabIndex = 6;
             lbe_NgayVao.Text = "Ngày vào: ";
             // 
@@ -117,35 +117,35 @@
             // 
             txt_HoVaTen.Location = new Point(358, 68);
             txt_HoVaTen.Name = "txt_HoVaTen";
-            txt_HoVaTen.Size = new Size(293, 27);
+            txt_HoVaTen.Size = new Size(293, 31);
             txt_HoVaTen.TabIndex = 7;
             // 
             // txt_Email
             // 
             txt_Email.Location = new Point(358, 120);
             txt_Email.Name = "txt_Email";
-            txt_Email.Size = new Size(293, 27);
+            txt_Email.Size = new Size(293, 31);
             txt_Email.TabIndex = 8;
             // 
             // txt_SDT
             // 
             txt_SDT.Location = new Point(358, 178);
             txt_SDT.Name = "txt_SDT";
-            txt_SDT.Size = new Size(293, 27);
+            txt_SDT.Size = new Size(293, 31);
             txt_SDT.TabIndex = 9;
             // 
             // txt_ChucVu
             // 
             txt_ChucVu.Location = new Point(358, 230);
             txt_ChucVu.Name = "txt_ChucVu";
-            txt_ChucVu.Size = new Size(293, 27);
+            txt_ChucVu.Size = new Size(293, 31);
             txt_ChucVu.TabIndex = 10;
             // 
             // datetime_NgayVao
             // 
             datetime_NgayVao.Location = new Point(358, 282);
             datetime_NgayVao.Name = "datetime_NgayVao";
-            datetime_NgayVao.Size = new Size(293, 27);
+            datetime_NgayVao.Size = new Size(293, 31);
             datetime_NgayVao.TabIndex = 11;
             // 
             // btt_CapNhat
@@ -160,7 +160,7 @@
             // 
             // btt_DoiMatKhau
             // 
-            btt_DoiMatKhau.Location = new Point(177, 393);
+            btt_DoiMatKhau.Location = new Point(246, 393);
             btt_DoiMatKhau.Name = "btt_DoiMatKhau";
             btt_DoiMatKhau.Size = new Size(155, 43);
             btt_DoiMatKhau.TabIndex = 13;
@@ -170,9 +170,9 @@
             // 
             // btt_ThemNguoiDung
             // 
-            btt_ThemNguoiDung.Location = new Point(338, 393);
+            btt_ThemNguoiDung.Location = new Point(457, 393);
             btt_ThemNguoiDung.Name = "btt_ThemNguoiDung";
-            btt_ThemNguoiDung.Size = new Size(155, 43);
+            btt_ThemNguoiDung.Size = new Size(182, 43);
             btt_ThemNguoiDung.TabIndex = 14;
             btt_ThemNguoiDung.Text = "Thêm người dùng";
             btt_ThemNguoiDung.UseVisualStyleBackColor = true;
@@ -180,7 +180,7 @@
             // 
             // btt_DangXuat
             // 
-            btt_DangXuat.Location = new Point(338, 452);
+            btt_DangXuat.Location = new Point(246, 452);
             btt_DangXuat.Name = "btt_DangXuat";
             btt_DangXuat.Size = new Size(155, 43);
             btt_DangXuat.TabIndex = 17;
@@ -200,9 +200,9 @@
             // 
             // btt_QuanLyKhachHang
             // 
-            btt_QuanLyKhachHang.Location = new Point(177, 452);
+            btt_QuanLyKhachHang.Location = new Point(457, 452);
             btt_QuanLyKhachHang.Name = "btt_QuanLyKhachHang";
-            btt_QuanLyKhachHang.Size = new Size(155, 43);
+            btt_QuanLyKhachHang.Size = new Size(181, 43);
             btt_QuanLyKhachHang.TabIndex = 16;
             btt_QuanLyKhachHang.Text = "Quản lý khách hàng";
             btt_QuanLyKhachHang.UseVisualStyleBackColor = true;
@@ -210,7 +210,7 @@
             // 
             // Frm_Members
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(663, 507);
             Controls.Add(btt_QuanLyKhachHang);

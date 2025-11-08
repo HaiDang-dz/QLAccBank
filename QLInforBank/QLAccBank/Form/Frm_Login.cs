@@ -14,6 +14,12 @@ namespace QLAccBank
             InitializeComponent();
         }
 
+        public void ResetLoginInfo()
+        {
+            txt_username.Text = "";
+            txt_password.Text = "";
+            txt_username.Focus(); // đưa con trỏ về ô username
+        }
         private void bt_login_Click(object sender, EventArgs e)
         {
             string username = txt_username.Text.Trim();

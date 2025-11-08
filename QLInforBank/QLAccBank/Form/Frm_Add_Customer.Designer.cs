@@ -34,37 +34,41 @@
             btnHuy = new Button();
             btnXacNhan = new Button();
             txtSoCanCuoc = new TextBox();
+            label9 = new Label();
+            txt_sotaikhoan = new TextBox();
+            combobox_loaithe = new ComboBox();
             cboGioiTinh = new ComboBox();
             label2 = new Label();
             dateTimePickerDOB = new DateTimePicker();
             label5 = new Label();
+            txtDiaChi = new TextBox();
             txtEmail = new TextBox();
             txtSoDienThoai = new TextBox();
             txtHoTen = new TextBox();
+            label8 = new Label();
             label4 = new Label();
             label7 = new Label();
+            label10 = new Label();
             label6 = new Label();
             label3 = new Label();
-            label8 = new Label();
-            txtDiaChi = new TextBox();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(34, 58);
+            label1.Location = new Point(339, 53);
             label1.Name = "label1";
-            label1.Size = new Size(113, 19);
+            label1.Size = new Size(139, 23);
             label1.TabIndex = 0;
             label1.Text = "Mã Khách hàng";
             // 
             // txtMaKhachHang
             // 
-            txtMaKhachHang.Location = new Point(34, 87);
+            txtMaKhachHang.Location = new Point(335, 82);
             txtMaKhachHang.Margin = new Padding(3, 4, 3, 4);
             txtMaKhachHang.Name = "txtMaKhachHang";
-            txtMaKhachHang.Size = new Size(114, 27);
+            txtMaKhachHang.Size = new Size(201, 31);
             txtMaKhachHang.TabIndex = 1;
             // 
             // groupBox1
@@ -72,7 +76,10 @@
             groupBox1.Controls.Add(btnHuy);
             groupBox1.Controls.Add(btnXacNhan);
             groupBox1.Controls.Add(txtSoCanCuoc);
+            groupBox1.Controls.Add(label9);
             groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(txt_sotaikhoan);
+            groupBox1.Controls.Add(combobox_loaithe);
             groupBox1.Controls.Add(cboGioiTinh);
             groupBox1.Controls.Add(txtMaKhachHang);
             groupBox1.Controls.Add(label2);
@@ -85,13 +92,14 @@
             groupBox1.Controls.Add(label8);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(label10);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(label3);
             groupBox1.Location = new Point(32, 13);
             groupBox1.Margin = new Padding(3, 4, 3, 4);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(3, 4, 3, 4);
-            groupBox1.Size = new Size(725, 402);
+            groupBox1.Size = new Size(807, 476);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin khách hàng ";
@@ -99,9 +107,9 @@
             // btnHuy
             // 
             btnHuy.Font = new Font("Times New Roman", 15F);
-            btnHuy.Location = new Point(376, 320);
+            btnHuy.Location = new Point(448, 403);
             btnHuy.Name = "btnHuy";
-            btnHuy.Size = new Size(133, 37);
+            btnHuy.Size = new Size(148, 50);
             btnHuy.TabIndex = 8;
             btnHuy.Text = "Hủy";
             btnHuy.UseVisualStyleBackColor = true;
@@ -110,9 +118,9 @@
             // btnXacNhan
             // 
             btnXacNhan.Font = new Font("Times New Roman", 15F);
-            btnXacNhan.Location = new Point(158, 320);
+            btnXacNhan.Location = new Point(222, 403);
             btnXacNhan.Name = "btnXacNhan";
-            btnXacNhan.Size = new Size(133, 37);
+            btnXacNhan.Size = new Size(148, 50);
             btnXacNhan.TabIndex = 8;
             btnXacNhan.Text = "Xác nhận";
             btnXacNhan.UseVisualStyleBackColor = true;
@@ -120,27 +128,55 @@
             // 
             // txtSoCanCuoc
             // 
-            txtSoCanCuoc.Location = new Point(485, 184);
+            txtSoCanCuoc.Location = new Point(337, 254);
             txtSoCanCuoc.Name = "txtSoCanCuoc";
-            txtSoCanCuoc.Size = new Size(203, 27);
+            txtSoCanCuoc.Size = new Size(203, 31);
             txtSoCanCuoc.TabIndex = 6;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(341, 141);
+            label9.Name = "label9";
+            label9.Size = new Size(118, 23);
+            label9.TabIndex = 0;
+            label9.Text = "Số tài Khoản";
+            // 
+            // txt_sotaikhoan
+            // 
+            txt_sotaikhoan.Location = new Point(337, 170);
+            txt_sotaikhoan.Margin = new Padding(3, 4, 3, 4);
+            txt_sotaikhoan.Name = "txt_sotaikhoan";
+            txt_sotaikhoan.Size = new Size(199, 31);
+            txt_sotaikhoan.TabIndex = 1;
+            // 
+            // combobox_loaithe
+            // 
+            combobox_loaithe.FormattingEnabled = true;
+            combobox_loaithe.Items.AddRange(new object[] { "thanh toán", "tín dụng", "tiết kiệm" });
+            combobox_loaithe.Location = new Point(599, 170);
+            combobox_loaithe.Margin = new Padding(3, 4, 3, 4);
+            combobox_loaithe.Name = "combobox_loaithe";
+            combobox_loaithe.Size = new Size(182, 30);
+            combobox_loaithe.TabIndex = 3;
+            combobox_loaithe.SelectedIndexChanged += combobox_loaithe_SelectedIndexChanged;
             // 
             // cboGioiTinh
             // 
             cboGioiTinh.FormattingEnabled = true;
             cboGioiTinh.Items.AddRange(new object[] { "Nam", "Nữ", "Khác" });
-            cboGioiTinh.Location = new Point(485, 87);
+            cboGioiTinh.Location = new Point(599, 254);
             cboGioiTinh.Margin = new Padding(3, 4, 3, 4);
             cboGioiTinh.Name = "cboGioiTinh";
-            cboGioiTinh.Size = new Size(154, 27);
+            cboGioiTinh.Size = new Size(182, 30);
             cboGioiTinh.TabIndex = 3;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(200, 58);
+            label2.Location = new Point(20, 53);
             label2.Name = "label2";
-            label2.Size = new Size(73, 19);
+            label2.Size = new Size(90, 23);
             label2.TabIndex = 0;
             label2.Text = "Họ và tên";
             // 
@@ -148,109 +184,118 @@
             // 
             dateTimePickerDOB.CustomFormat = "dd/MM/yyyy";
             dateTimePickerDOB.Format = DateTimePickerFormat.Custom;
-            dateTimePickerDOB.Location = new Point(34, 184);
+            dateTimePickerDOB.Location = new Point(601, 81);
             dateTimePickerDOB.Margin = new Padding(3, 4, 3, 4);
             dateTimePickerDOB.MinDate = new DateTime(1900, 1, 1, 0, 0, 0, 0);
             dateTimePickerDOB.Name = "dateTimePickerDOB";
-            dateTimePickerDOB.Size = new Size(121, 27);
+            dateTimePickerDOB.Size = new Size(180, 31);
             dateTimePickerDOB.TabIndex = 4;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(487, 158);
+            label5.Location = new Point(339, 225);
             label5.Name = "label5";
-            label5.Size = new Size(92, 19);
+            label5.Size = new Size(110, 23);
             label5.TabIndex = 0;
             label5.Text = "Số căn cước";
             // 
+            // txtDiaChi
+            // 
+            txtDiaChi.Location = new Point(156, 339);
+            txtDiaChi.Margin = new Padding(3, 4, 3, 4);
+            txtDiaChi.Name = "txtDiaChi";
+            txtDiaChi.Size = new Size(537, 31);
+            txtDiaChi.TabIndex = 7;
+            // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(376, 267);
+            txtEmail.Location = new Point(20, 254);
             txtEmail.Margin = new Padding(3, 4, 3, 4);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(312, 27);
+            txtEmail.Size = new Size(264, 31);
             txtEmail.TabIndex = 7;
             // 
             // txtSoDienThoai
             // 
-            txtSoDienThoai.Location = new Point(200, 184);
+            txtSoDienThoai.Location = new Point(20, 169);
             txtSoDienThoai.Margin = new Padding(3, 4, 3, 4);
             txtSoDienThoai.Name = "txtSoDienThoai";
-            txtSoDienThoai.Size = new Size(243, 27);
+            txtSoDienThoai.Size = new Size(264, 31);
             txtSoDienThoai.TabIndex = 5;
             // 
             // txtHoTen
             // 
-            txtHoTen.Location = new Point(200, 87);
+            txtHoTen.Location = new Point(20, 82);
             txtHoTen.Margin = new Padding(3, 4, 3, 4);
             txtHoTen.Name = "txtHoTen";
-            txtHoTen.Size = new Size(243, 27);
+            txtHoTen.Size = new Size(264, 31);
             txtHoTen.TabIndex = 2;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(158, 316);
+            label8.Name = "label8";
+            label8.Size = new Size(70, 23);
+            label8.TabIndex = 0;
+            label8.Text = "Địa chỉ";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(34, 156);
+            label4.Location = new Point(601, 53);
             label4.Name = "label4";
-            label4.Size = new Size(76, 19);
+            label4.Size = new Size(92, 23);
             label4.TabIndex = 0;
             label4.Text = "Ngày sinh";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(378, 244);
+            label7.Location = new Point(20, 227);
             label7.Name = "label7";
-            label7.Size = new Size(49, 19);
+            label7.Size = new Size(60, 23);
             label7.TabIndex = 0;
             label7.Text = "Email";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(601, 141);
+            label10.Name = "label10";
+            label10.Size = new Size(78, 23);
+            label10.TabIndex = 0;
+            label10.Text = "Loại thẻ";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(487, 58);
+            label6.Location = new Point(601, 225);
             label6.Name = "label6";
-            label6.Size = new Size(70, 19);
+            label6.Size = new Size(85, 23);
             label6.TabIndex = 0;
             label6.Text = "Giới tính";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(200, 156);
+            label3.Location = new Point(20, 141);
             label3.Name = "label3";
-            label3.Size = new Size(80, 19);
+            label3.Size = new Size(97, 23);
             label3.TabIndex = 0;
             label3.Text = "Điện thoại";
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(36, 244);
-            label8.Name = "label8";
-            label8.Size = new Size(58, 19);
-            label8.TabIndex = 0;
-            label8.Text = "Địa chỉ";
-            // 
-            // txtDiaChi
-            // 
-            txtDiaChi.Location = new Point(34, 267);
-            txtDiaChi.Margin = new Padding(3, 4, 3, 4);
-            txtDiaChi.Name = "txtDiaChi";
-            txtDiaChi.Size = new Size(277, 27);
-            txtDiaChi.TabIndex = 7;
-            // 
             // Frm_Add_Customer
             // 
-            AutoScaleDimensions = new SizeF(9F, 19F);
+            AutoScaleDimensions = new SizeF(11F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(789, 428);
+            ClientSize = new Size(863, 495);
             Controls.Add(groupBox1);
             Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "Frm_Add_Customer";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "AddCustomer";
+            Text = "Thêm khách hàng ";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
@@ -276,5 +321,9 @@
         public TextBox txtMaKhachHang;
         private TextBox txtDiaChi;
         private Label label8;
+        private Label label9;
+        public TextBox txt_sotaikhoan;
+        private ComboBox combobox_loaithe;
+        private Label label10;
     }
 }

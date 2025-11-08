@@ -74,7 +74,7 @@ namespace QLAccBank
         private void btt_QuanLyKhachHang_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show(
-                "Bạn có chắc chắn muốn quay về trang chủ không?",
+                "Bạn muốn qua trang quản lý khách hàng?",
                 "Xác nhận",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
@@ -100,8 +100,10 @@ namespace QLAccBank
             if (result == DialogResult.Yes)
             {
                 this.Hide();
-                loginForm.Show();  // ✅ Quay lại form login cũ, giữ nguyên dữ liệu
+                Frm_Login newlogin = new Frm_Login();
+                newlogin.ShowDialog();
                 this.Close();
+                newlogin.ResetLoginInfo();
             }
         }
 

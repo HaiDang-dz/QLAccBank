@@ -12,8 +12,8 @@ namespace QLAccBank.Class
     public class Customer
     {
         public string CustomerID { get; set; }         // Mã khách hàng
-        public string LastName { get; set; }   // Họ đệm
-        public string FirstName { get; set; }  // Tên
+        public string FirstName { get; set; }   // Họ đệm
+        public string LastName { get; set; }  // Tên
         public string Gender { get; set; }             // Giới tính
         public DateTime DOB { get; set; }      // Ngày sinh
         public string PhoneNumber { get; set; }        // Số điện thoại
@@ -23,15 +23,15 @@ namespace QLAccBank.Class
 
         public Customer()
         {
-            CustomerID = LastName = FirstName = Gender = Address = PhoneNumber = Email = IDCard = string.Empty;
+            CustomerID = FirstName =LastName = Gender = Address = PhoneNumber = Email = IDCard = string.Empty;
         }
 
         public Customer(string csvLine)
         {
             string[] values = csvLine.Split(',');
             CustomerID = values[0];
-            LastName = values[1];
-            FirstName = values[2];
+            FirstName = values[1];
+            LastName = values[2];
             Gender = values[3];
             DOB = DateTime.Parse(values[4]);
             PhoneNumber = values[5];
@@ -83,7 +83,7 @@ namespace QLAccBank.Class
             dt.Columns.Add("Căn cước", typeof(string));
             foreach (var cus in Customers)
             {
-                dt.Rows.Add(cus.CustomerID, cus.LastName, cus.FirstName, cus.Gender, cus.DOB, cus.PhoneNumber, cus.Email, cus.Address, cus.IDCard);
+                dt.Rows.Add(cus.CustomerID, cus.FirstName, cus.LastName, cus.Gender, cus.DOB, cus.PhoneNumber, cus.Email, cus.Address, cus.IDCard);
             }
             return dt;
         }
