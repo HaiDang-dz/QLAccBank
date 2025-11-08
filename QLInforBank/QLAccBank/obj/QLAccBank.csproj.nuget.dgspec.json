@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\School\\Lập trình hướng đối tượng\\source\\repos\\QLInforBank\\QLAccBank\\QLAccBank.csproj": {}
+    "C:\\Users\\nguye\\source\\bai2\\QLInforBank\\QLAccBank\\QLAccBank.csproj": {}
   },
   "projects": {
-    "E:\\School\\Lập trình hướng đối tượng\\source\\repos\\QLInforBank\\QLAccBank\\QLAccBank.csproj": {
+    "C:\\Users\\nguye\\source\\bai2\\QLInforBank\\QLAccBank\\QLAccBank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\School\\Lập trình hướng đối tượng\\source\\repos\\QLInforBank\\QLAccBank\\QLAccBank.csproj",
+        "projectUniqueName": "C:\\Users\\nguye\\source\\bai2\\QLInforBank\\QLAccBank\\QLAccBank.csproj",
         "projectName": "QLAccBank",
-        "projectPath": "E:\\School\\Lập trình hướng đối tượng\\source\\repos\\QLInforBank\\QLAccBank\\QLAccBank.csproj",
-        "packagesPath": "C:\\Users\\KHANH DOAN\\.nuget\\packages\\",
-        "outputPath": "E:\\School\\Lập trình hướng đối tượng\\source\\repos\\QLInforBank\\QLAccBank\\obj\\",
+        "projectPath": "C:\\Users\\nguye\\source\\bai2\\QLInforBank\\QLAccBank\\QLAccBank.csproj",
+        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nguye\\source\\bai2\\QLInforBank\\QLAccBank\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\Visual Studio 2022\\Visual Studio_Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\KHANH DOAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

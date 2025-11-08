@@ -28,185 +28,131 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lbe_STK = new Label();
-            lbe_MaKH = new Label();
-            lbe_SoDu = new Label();
-            lbe_LoaiTK = new Label();
-            lbe_NgayMo = new Label();
-            txt_STK = new TextBox();
-            txt_MaKH = new TextBox();
-            txt_SoDu = new TextBox();
-            datetime = new DateTimePicker();
-            dgv_BankAccount = new DataGridView();
-            AccountNumber = new DataGridViewTextBoxColumn();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_BankAccount));
+            IDCard = new DataGridViewTextBoxColumn();
+            Email = new DataGridViewTextBoxColumn();
+            PhoneNumber = new DataGridViewTextBoxColumn();
+            DOB = new DataGridViewTextBoxColumn();
+            Gender = new DataGridViewTextBoxColumn();
+            FullName = new DataGridViewTextBoxColumn();
             CustomerID = new DataGridViewTextBoxColumn();
-            CustomerName = new DataGridViewTextBoxColumn();
-            AccountType = new DataGridViewTextBoxColumn();
-            Balance = new DataGridViewTextBoxColumn();
-            OpenDate = new DataGridViewTextBoxColumn();
+            dgv_Customer = new DataGridView();
+            Address = new DataGridViewTextBoxColumn();
             IsActive = new DataGridViewTextBoxColumn();
-            lbe_TrangThai = new Label();
-            txt_tim = new TextBox();
-            lb_tim = new Label();
-            txt_loaiTK = new TextBox();
-            txt_tthd = new TextBox();
+            OpenDate = new DataGridViewTextBoxColumn();
+            Balance = new DataGridViewTextBoxColumn();
+            CustomerID1 = new DataGridViewTextBoxColumn();
+            AccountNumber = new DataGridViewTextBoxColumn();
+            dgv_BankAccount = new DataGridView();
+            AccountType = new DataGridViewTextBoxColumn();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            panelSinhVien = new Panel();
+            lblCusInformation = new Label();
+            panel1 = new Panel();
+            btnThemMoi = new Button();
+            txt_Tim = new TextBox();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)dgv_Customer).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgv_BankAccount).BeginInit();
+            tableLayoutPanel1.SuspendLayout();
+            panelSinhVien.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // lbe_STK
+            // IDCard
             // 
-            lbe_STK.AutoSize = true;
-            lbe_STK.Location = new Point(65, 75);
-            lbe_STK.Margin = new Padding(4, 0, 4, 0);
-            lbe_STK.Name = "lbe_STK";
-            lbe_STK.Size = new Size(116, 25);
-            lbe_STK.TabIndex = 0;
-            lbe_STK.Text = "Số tài khoản ";
+            IDCard.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            IDCard.DataPropertyName = "IDCard";
+            IDCard.FillWeight = 18.20646F;
+            IDCard.HeaderText = "Căn cước";
+            IDCard.MinimumWidth = 8;
+            IDCard.Name = "IDCard";
+            IDCard.ReadOnly = true;
             // 
-            // lbe_MaKH
+            // Email
             // 
-            lbe_MaKH.AutoSize = true;
-            lbe_MaKH.Location = new Point(65, 132);
-            lbe_MaKH.Margin = new Padding(4, 0, 4, 0);
-            lbe_MaKH.Name = "lbe_MaKH";
-            lbe_MaKH.Size = new Size(133, 25);
-            lbe_MaKH.TabIndex = 1;
-            lbe_MaKH.Text = "Mã khách hàng";
+            Email.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Email.DataPropertyName = "Email";
+            Email.FillWeight = 17.6822853F;
+            Email.HeaderText = "Email";
+            Email.MinimumWidth = 8;
+            Email.Name = "Email";
+            Email.ReadOnly = true;
             // 
-            // lbe_SoDu
+            // PhoneNumber
             // 
-            lbe_SoDu.AutoSize = true;
-            lbe_SoDu.Location = new Point(65, 200);
-            lbe_SoDu.Margin = new Padding(4, 0, 4, 0);
-            lbe_SoDu.Name = "lbe_SoDu";
-            lbe_SoDu.Size = new Size(60, 25);
-            lbe_SoDu.TabIndex = 2;
-            lbe_SoDu.Text = "Số dư";
+            PhoneNumber.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            PhoneNumber.DataPropertyName = "PhoneNumber";
+            PhoneNumber.FillWeight = 14.9852228F;
+            PhoneNumber.HeaderText = "SĐT";
+            PhoneNumber.MinimumWidth = 8;
+            PhoneNumber.Name = "PhoneNumber";
+            PhoneNumber.ReadOnly = true;
             // 
-            // lbe_LoaiTK
+            // DOB
             // 
-            lbe_LoaiTK.AutoSize = true;
-            lbe_LoaiTK.Location = new Point(631, 75);
-            lbe_LoaiTK.Margin = new Padding(4, 0, 4, 0);
-            lbe_LoaiTK.Name = "lbe_LoaiTK";
-            lbe_LoaiTK.Size = new Size(127, 25);
-            lbe_LoaiTK.TabIndex = 3;
-            lbe_LoaiTK.Text = "Loại tài khoản ";
+            DOB.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            DOB.DataPropertyName = "DOB";
+            DOB.FillWeight = 17.6822853F;
+            DOB.HeaderText = "Ngày sinh";
+            DOB.MinimumWidth = 8;
+            DOB.Name = "DOB";
+            DOB.ReadOnly = true;
             // 
-            // lbe_NgayMo
+            // Gender
             // 
-            lbe_NgayMo.AutoSize = true;
-            lbe_NgayMo.Location = new Point(631, 132);
-            lbe_NgayMo.Margin = new Padding(4, 0, 4, 0);
-            lbe_NgayMo.Name = "lbe_NgayMo";
-            lbe_NgayMo.Size = new Size(91, 25);
-            lbe_NgayMo.TabIndex = 4;
-            lbe_NgayMo.Text = "Ngày mở ";
+            Gender.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Gender.DataPropertyName = "Gender";
+            Gender.FillWeight = 12.4044333F;
+            Gender.HeaderText = "Giới tính";
+            Gender.MinimumWidth = 8;
+            Gender.Name = "Gender";
+            Gender.ReadOnly = true;
             // 
-            // txt_STK
+            // FullName
             // 
-            txt_STK.Enabled = false;
-            txt_STK.Location = new Point(222, 71);
-            txt_STK.Margin = new Padding(4);
-            txt_STK.Name = "txt_STK";
-            txt_STK.Size = new Size(373, 31);
-            txt_STK.TabIndex = 5;
-            // 
-            // txt_MaKH
-            // 
-            txt_MaKH.Enabled = false;
-            txt_MaKH.Location = new Point(222, 124);
-            txt_MaKH.Margin = new Padding(4);
-            txt_MaKH.Name = "txt_MaKH";
-            txt_MaKH.Size = new Size(373, 31);
-            txt_MaKH.TabIndex = 6;
-            // 
-            // txt_SoDu
-            // 
-            txt_SoDu.Enabled = false;
-            txt_SoDu.Location = new Point(222, 196);
-            txt_SoDu.Margin = new Padding(4);
-            txt_SoDu.Name = "txt_SoDu";
-            txt_SoDu.Size = new Size(373, 31);
-            txt_SoDu.TabIndex = 7;
-            // 
-            // datetime
-            // 
-            datetime.Enabled = false;
-            datetime.Location = new Point(832, 126);
-            datetime.Margin = new Padding(4);
-            datetime.Name = "datetime";
-            datetime.Size = new Size(373, 31);
-            datetime.TabIndex = 10;
-            // 
-            // dgv_BankAccount
-            // 
-            dgv_BankAccount.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_BankAccount.Columns.AddRange(new DataGridViewColumn[] { AccountNumber, CustomerID, CustomerName, AccountType, Balance, OpenDate, IsActive });
-            dgv_BankAccount.Dock = DockStyle.Bottom;
-            dgv_BankAccount.Location = new Point(0, 405);
-            dgv_BankAccount.Margin = new Padding(4);
-            dgv_BankAccount.Name = "dgv_BankAccount";
-            dgv_BankAccount.ReadOnly = true;
-            dgv_BankAccount.RowHeadersWidth = 51;
-            dgv_BankAccount.Size = new Size(1305, 366);
-            dgv_BankAccount.TabIndex = 12;
-            dgv_BankAccount.CellEnter += dgv_BankAccount_CellEnter;
-            dgv_BankAccount.CellFormatting += dgv_BankAccount_CellFormatting;
-            // 
-            // AccountNumber
-            // 
-            AccountNumber.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            AccountNumber.FillWeight = 80F;
-            AccountNumber.HeaderText = "Số tài khoản";
-            AccountNumber.MinimumWidth = 8;
-            AccountNumber.Name = "AccountNumber";
-            AccountNumber.ReadOnly = true;
+            FullName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            FullName.DataPropertyName = "FullName";
+            FullName.FillWeight = 31.96174F;
+            FullName.HeaderText = "Họ Tên KH";
+            FullName.MinimumWidth = 8;
+            FullName.Name = "FullName";
+            FullName.ReadOnly = true;
             // 
             // CustomerID
             // 
             CustomerID.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            CustomerID.FillWeight = 60F;
-            CustomerID.HeaderText = "Mã khách hàng ";
-            CustomerID.MinimumWidth = 6;
+            CustomerID.DataPropertyName = "CustomerID";
+            CustomerID.FillWeight = 11.6551733F;
+            CustomerID.HeaderText = "Mã KH";
+            CustomerID.MinimumWidth = 8;
             CustomerID.Name = "CustomerID";
             CustomerID.ReadOnly = true;
             // 
-            // CustomerName
+            // dgv_Customer
             // 
-            CustomerName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            CustomerName.FillWeight = 120F;
-            CustomerName.HeaderText = "Tên khách hàng";
-            CustomerName.MinimumWidth = 8;
-            CustomerName.Name = "CustomerName";
-            CustomerName.ReadOnly = true;
+            dgv_Customer.AllowUserToAddRows = false;
+            dgv_Customer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgv_Customer.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv_Customer.Columns.AddRange(new DataGridViewColumn[] { CustomerID, FullName, Gender, DOB, PhoneNumber, Email, Address, IDCard });
+            dgv_Customer.Location = new Point(2, 69);
+            dgv_Customer.Margin = new Padding(2);
+            dgv_Customer.Name = "dgv_Customer";
+            dgv_Customer.ReadOnly = true;
+            dgv_Customer.RowHeadersWidth = 62;
+            dgv_Customer.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv_Customer.Size = new Size(1036, 794);
+            dgv_Customer.TabIndex = 6;
             // 
-            // AccountType
+            // Address
             // 
-            AccountType.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            AccountType.FillWeight = 80F;
-            AccountType.HeaderText = "Loại tài khoản ";
-            AccountType.MinimumWidth = 6;
-            AccountType.Name = "AccountType";
-            AccountType.ReadOnly = true;
-            // 
-            // Balance
-            // 
-            Balance.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Balance.FillWeight = 80F;
-            Balance.HeaderText = "Số dư";
-            Balance.MinimumWidth = 6;
-            Balance.Name = "Balance";
-            Balance.ReadOnly = true;
-            // 
-            // OpenDate
-            // 
-            OpenDate.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            OpenDate.FillWeight = 70F;
-            OpenDate.HeaderText = "Ngày Mở";
-            OpenDate.MinimumWidth = 6;
-            OpenDate.Name = "OpenDate";
-            OpenDate.ReadOnly = true;
+            Address.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Address.DataPropertyName = "Address";
+            Address.FillWeight = 17.2810574F;
+            Address.HeaderText = "Địa chỉ";
+            Address.MinimumWidth = 8;
+            Address.Name = "Address";
+            Address.ReadOnly = true;
             // 
             // IsActive
             // 
@@ -217,113 +163,195 @@
             IsActive.Name = "IsActive";
             IsActive.ReadOnly = true;
             // 
-            // lbe_TrangThai
+            // OpenDate
             // 
-            lbe_TrangThai.AutoSize = true;
-            lbe_TrangThai.Location = new Point(631, 194);
-            lbe_TrangThai.Margin = new Padding(4, 0, 4, 0);
-            lbe_TrangThai.Name = "lbe_TrangThai";
-            lbe_TrangThai.Size = new Size(183, 25);
-            lbe_TrangThai.TabIndex = 13;
-            lbe_TrangThai.Text = "Trạng thái hoạt động ";
+            OpenDate.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            OpenDate.FillWeight = 70F;
+            OpenDate.HeaderText = "Ngày Mở";
+            OpenDate.MinimumWidth = 6;
+            OpenDate.Name = "OpenDate";
+            OpenDate.ReadOnly = true;
             // 
-            // txt_tim
+            // Balance
             // 
-            txt_tim.Location = new Point(222, 314);
-            txt_tim.Margin = new Padding(2);
-            txt_tim.Name = "txt_tim";
-            txt_tim.Size = new Size(375, 31);
-            txt_tim.TabIndex = 20;
-            txt_tim.TextChanged += txt_tim_TextChanged;
+            Balance.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Balance.FillWeight = 80F;
+            Balance.HeaderText = "Số dư";
+            Balance.MinimumWidth = 6;
+            Balance.Name = "Balance";
+            Balance.ReadOnly = true;
             // 
-            // lb_tim
+            // CustomerID1
             // 
-            lb_tim.AutoSize = true;
-            lb_tim.Location = new Point(65, 319);
-            lb_tim.Margin = new Padding(2, 0, 2, 0);
-            lb_tim.Name = "lb_tim";
-            lb_tim.Size = new Size(84, 25);
-            lb_tim.TabIndex = 15;
-            lb_tim.Text = "Tìm kiếm";
-            lb_tim.TextAlign = ContentAlignment.MiddleCenter;
+            CustomerID1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            CustomerID1.FillWeight = 60F;
+            CustomerID1.HeaderText = "Mã KH";
+            CustomerID1.MinimumWidth = 6;
+            CustomerID1.Name = "CustomerID1";
+            CustomerID1.ReadOnly = true;
             // 
-            // txt_loaiTK
+            // AccountNumber
             // 
-            txt_loaiTK.Enabled = false;
-            txt_loaiTK.Location = new Point(832, 69);
-            txt_loaiTK.Margin = new Padding(4);
-            txt_loaiTK.Name = "txt_loaiTK";
-            txt_loaiTK.Size = new Size(373, 31);
-            txt_loaiTK.TabIndex = 6;
+            AccountNumber.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            AccountNumber.FillWeight = 80F;
+            AccountNumber.HeaderText = "Số TK";
+            AccountNumber.MinimumWidth = 8;
+            AccountNumber.Name = "AccountNumber";
+            AccountNumber.ReadOnly = true;
             // 
-            // txt_tthd
+            // dgv_BankAccount
             // 
-            txt_tthd.Enabled = false;
-            txt_tthd.Location = new Point(832, 191);
-            txt_tthd.Margin = new Padding(4);
-            txt_tthd.Name = "txt_tthd";
-            txt_tthd.Size = new Size(373, 31);
-            txt_tthd.TabIndex = 6;
+            dgv_BankAccount.AllowUserToAddRows = false;
+            dgv_BankAccount.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv_BankAccount.Columns.AddRange(new DataGridViewColumn[] { AccountNumber, CustomerID1, AccountType, Balance, OpenDate, IsActive });
+            dgv_BankAccount.Dock = DockStyle.Fill;
+            dgv_BankAccount.Location = new Point(1043, 70);
+            dgv_BankAccount.Name = "dgv_BankAccount";
+            dgv_BankAccount.ReadOnly = true;
+            dgv_BankAccount.RowHeadersWidth = 51;
+            dgv_BankAccount.Size = new Size(677, 792);
+            dgv_BankAccount.TabIndex = 13;
+            // 
+            // AccountType
+            // 
+            AccountType.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            AccountType.FillWeight = 80F;
+            AccountType.HeaderText = "Loại tài khoản ";
+            AccountType.MinimumWidth = 6;
+            AccountType.Name = "AccountType";
+            AccountType.ReadOnly = true;
+            // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60.39501F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 39.60499F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.Controls.Add(dgv_BankAccount, 1, 1);
+            tableLayoutPanel1.Controls.Add(panelSinhVien, 1, 0);
+            tableLayoutPanel1.Controls.Add(panel1, 0, 0);
+            tableLayoutPanel1.Controls.Add(dgv_Customer, 0, 1);
+            tableLayoutPanel1.Dock = DockStyle.Fill;
+            tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Margin = new Padding(3, 4, 3, 4);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 2;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 67F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Size = new Size(1723, 865);
+            tableLayoutPanel1.TabIndex = 3;
+            // 
+            // panelSinhVien
+            // 
+            panelSinhVien.Controls.Add(lblCusInformation);
+            panelSinhVien.Dock = DockStyle.Fill;
+            panelSinhVien.Location = new Point(1043, 4);
+            panelSinhVien.Margin = new Padding(3, 4, 3, 4);
+            panelSinhVien.Name = "panelSinhVien";
+            panelSinhVien.Size = new Size(677, 59);
+            panelSinhVien.TabIndex = 2;
+            // 
+            // lblCusInformation
+            // 
+            lblCusInformation.AutoSize = true;
+            lblCusInformation.ForeColor = Color.Blue;
+            lblCusInformation.Location = new Point(3, 29);
+            lblCusInformation.Name = "lblCusInformation";
+            lblCusInformation.Size = new Size(154, 20);
+            lblCusInformation.TabIndex = 0;
+            lblCusInformation.Text = "Thông tin khách hàng:";
+            lblCusInformation.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(btnThemMoi);
+            panel1.Controls.Add(txt_Tim);
+            panel1.Controls.Add(label1);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(3, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1034, 61);
+            panel1.TabIndex = 3;
+            // 
+            // btnThemMoi
+            // 
+            btnThemMoi.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnThemMoi.DialogResult = DialogResult.OK;
+            btnThemMoi.Image = (Image)resources.GetObject("btnThemMoi.Image");
+            btnThemMoi.ImageAlign = ContentAlignment.MiddleRight;
+            btnThemMoi.Location = new Point(2684, 19);
+            btnThemMoi.Margin = new Padding(3, 4, 3, 4);
+            btnThemMoi.Name = "btnThemMoi";
+            btnThemMoi.Size = new Size(118, 37);
+            btnThemMoi.TabIndex = 8;
+            btnThemMoi.Text = "Thêm mới";
+            btnThemMoi.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnThemMoi.UseVisualStyleBackColor = true;
+            // 
+            // txt_Tim
+            // 
+            txt_Tim.Location = new Point(262, 19);
+            txt_Tim.Name = "txt_Tim";
+            txt_Tim.Size = new Size(423, 27);
+            txt_Tim.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(18, 27);
+            label1.Name = "label1";
+            label1.Size = new Size(180, 20);
+            label1.TabIndex = 1;
+            label1.Text = "Tìm thông tin khách hàng:";
             // 
             // Frm_BankAccount
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1305, 771);
-            Controls.Add(txt_tim);
-            Controls.Add(lb_tim);
-            Controls.Add(lbe_TrangThai);
-            Controls.Add(dgv_BankAccount);
-            Controls.Add(datetime);
-            Controls.Add(txt_SoDu);
-            Controls.Add(txt_tthd);
-            Controls.Add(txt_loaiTK);
-            Controls.Add(txt_MaKH);
-            Controls.Add(txt_STK);
-            Controls.Add(lbe_NgayMo);
-            Controls.Add(lbe_LoaiTK);
-            Controls.Add(lbe_SoDu);
-            Controls.Add(lbe_MaKH);
-            Controls.Add(lbe_STK);
-            Margin = new Padding(4);
+            ClientSize = new Size(1723, 865);
+            Controls.Add(tableLayoutPanel1);
             Name = "Frm_BankAccount";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Thông Tin Tài Khoản";
-            Load += Frm_BankAccount_Load;
+            ((System.ComponentModel.ISupportInitialize)dgv_Customer).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgv_BankAccount).EndInit();
+            tableLayoutPanel1.ResumeLayout(false);
+            panelSinhVien.ResumeLayout(false);
+            panelSinhVien.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label lbe_STK;
-        private Label lbe_MaKH;
-        private Label lbe_SoDu;
-        private Label lbe_LoaiTK;
-        private Label lbe_NgayMo;
-        private TextBox txt_STK;
-        private TextBox txt_MaKH;
-        private TextBox txt_SoDu;
-        private DateTimePicker datetime;
-        private DataGridView dgv_BankAccount;
-        private Label lbe_TrangThai;
         private Button btt_QLTK;
-        private TextBox txt_tim;
         private Button button1;
         private Button bt_update;
         private Button bt_xoa;
-        private Label lb_tim;
         private DataGridViewTextBoxColumn LastName;
         private DataGridViewTextBoxColumn FirstName;
-        private DataGridViewTextBoxColumn AccountNumber;
+        private DataGridViewTextBoxColumn IDCard;
+        private DataGridViewTextBoxColumn Email;
+        private DataGridViewTextBoxColumn PhoneNumber;
+        private DataGridViewTextBoxColumn DOB;
+        private DataGridViewTextBoxColumn Gender;
+        private DataGridViewTextBoxColumn FullName;
         private DataGridViewTextBoxColumn CustomerID;
-        private DataGridViewTextBoxColumn CustomerName;
-        private DataGridViewTextBoxColumn AccountType;
-        private DataGridViewTextBoxColumn Balance;
-        private DataGridViewTextBoxColumn OpenDate;
+        private DataGridView dgv_Customer;
+        private DataGridViewTextBoxColumn Address;
         private DataGridViewTextBoxColumn IsActive;
-        private TextBox txt_loaiTK;
-        private TextBox txt_tthd;
+        private DataGridViewTextBoxColumn OpenDate;
+        private DataGridViewTextBoxColumn Balance;
+        private DataGridViewTextBoxColumn CustomerID1;
+        private DataGridViewTextBoxColumn AccountNumber;
+        private DataGridView dgv_BankAccount;
+        private DataGridViewTextBoxColumn AccountType;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Panel panelSinhVien;
+        private Label lblCusInformation;
+        private Panel panel1;
+        private Button btnThemMoi;
+        private TextBox txt_Tim;
+        private Label label1;
     }
 }

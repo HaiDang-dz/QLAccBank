@@ -12,9 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\KHANH DOAN\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\KHANH DOAN\\.nuget\\packages",
-      "E:\\Visual Studio 2022\\Visual Studio_Shared\\NuGetPackages"
+      "C:\\Users\\nguye\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\nguye\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
