@@ -29,6 +29,6 @@ namespace QLAccBank
             dgv_BankAccount.AlternatingRowsDefaultCellStyle.BackColor = Color.WhiteSmoke;
         }
 
-        //bjjkfbvjksnvkjsdbvkjsb
+        //bjjkf
     }
 }
