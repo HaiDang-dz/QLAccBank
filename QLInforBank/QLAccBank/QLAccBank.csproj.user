@@ -17,7 +17,7 @@
     <Compile Update="Form\Frm_Password.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\Frm_AddEmployee.cs">
+    <Compile Update="Form\Frm_Add_Employee.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Frm_AccountBank.cs">

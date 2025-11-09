@@ -116,31 +116,7 @@ namespace QLAccBank
             {
                 MessageBox.Show("Lỗi khi lưu file CSV: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void bt_them_Click_1(object sender, EventArgs e)
-        {
-            string newCustomerID = GenerateCustomerID();
-            // Mở form thêm với CustomerID tự động
-            Frm_Add_Customer frmAdd = new Frm_Add_Customer();  // Không truyền customer (để thêm mới)
-            frmAdd.txtMaKhachHang.Text = newCustomerID;  // Điền sẵn CustomerID
-            frmAdd.txtMaKhachHang.Enabled = false;  // Khóa không cho sửa (tùy chọn)
-            if (frmAdd.ShowDialog() == DialogResult.OK && frmAdd.returnCustomer != null)
-            {
-                // Gán CustomerID mới cho khách hàng trả về
-                frmAdd.returnCustomer.CustomerID = newCustomerID;
-                // Thêm vào danh sách
-                cusList.Add(frmAdd.returnCustomer);
-                // Cập nhật DataGridView
-                dgv_customer.DataSource = null;  // Reset DataSource
-                dgv_customer.DataSource = cusList;  // Gán lại danh sách mới
-                MessageBox.Show("Thêm khách hàng thành công!", "Thông báo");
-
-            }
-            string filePath = Path.Combine(Application.StartupPath, "customers.csv");
-            saveListToCSV(dgv_customer, filePath);
-        }
-
+        }     
 
         private void dgv_customer_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
@@ -307,6 +283,41 @@ namespace QLAccBank
         private void bt_thoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txt_tim_TextChanged(object sender, EventArgs e)
+        {
+            if (isUpdating) return; // tránh vòng lặp
+            isUpdating = true;
+
+            try
+            {
+                string filterText = txt_tim.Text.Trim().ToLower();
+
+                if (string.IsNullOrEmpty(filterText))
+                {
+                    dgv_customer.DataSource = cusList;
+                }
+                else
+                {
+                    var filtered = cusList.Where(c =>
+                        c.CustomerID.ToLower().Contains(filterText) ||
+                        c.FirstName.ToLower().Contains(filterText) ||
+                        c.LastName.ToLower().Contains(filterText) ||
+                        c.PhoneNumber.ToLower().Contains(filterText) ||
+                        c.Email.ToLower().Contains(filterText) ||
+                        c.IDCard.ToLower().Contains(filterText)
+                    ).ToList();
+
+                    dgv_customer.DataSource = filtered;
+                }
+
+                dgv_customer.Refresh();
+            }
+            finally
+            {
+                isUpdating = false;
+            }
         }
     }
 }

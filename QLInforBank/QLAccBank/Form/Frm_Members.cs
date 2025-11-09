@@ -176,7 +176,7 @@ namespace QLAccBank
 
         private void btt_ThemNguoiDung_Click(object sender, EventArgs e)
         {
-            Frm_AddEmployee frmAdd = new Frm_AddEmployee(members);
+            Frm_Add_Employee frmAdd = new Frm_Add_Employee(members);
             if (frmAdd.ShowDialog() == DialogResult.OK)
             {
                 MessageBox.Show("Người dùng mới đã được thêm! Hãy đăng xuất và đăng nhập lại để sử dụng tài khoản này.",

@@ -141,13 +141,13 @@
             // 
             // txt_password
             // 
-            txt_password.BackColor = SystemColors.Window;
+            txt_password.BackColor = Color.WhiteSmoke;
             txt_password.BorderStyle = BorderStyle.None;
             txt_password.Location = new Point(36, 8);
             txt_password.Margin = new Padding(2);
             txt_password.Name = "txt_password";
             txt_password.PasswordChar = '*';
-            txt_password.Size = new Size(278, 24);
+            txt_password.Size = new Size(274, 20);
             txt_password.TabIndex = 0;
             // 
             // pictureBox3
@@ -174,13 +174,13 @@
             // 
             // txt_username
             // 
-            txt_username.BackColor = SystemColors.Window;
+            txt_username.BackColor = Color.WhiteSmoke;
             txt_username.BorderStyle = BorderStyle.None;
             txt_username.ForeColor = SystemColors.WindowText;
             txt_username.Location = new Point(36, 16);
             txt_username.Margin = new Padding(2);
             txt_username.Name = "txt_username";
-            txt_username.Size = new Size(278, 24);
+            txt_username.Size = new Size(274, 20);
             txt_username.TabIndex = 0;
             // 
             // panel5
@@ -232,7 +232,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.qrcode_273473963_a9324a39fb640b3afb54072243cc7f29;
-            pictureBox4.Location = new Point(146, 466);
+            pictureBox4.Location = new Point(140, 385);
             pictureBox4.Margin = new Padding(3, 4, 3, 4);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(249, 201);
@@ -256,7 +256,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(9, 22);
             label2.Name = "label2";
-            label2.Size = new Size(77, 29);
+            label2.Size = new Size(66, 25);
             label2.TabIndex = 1;
             label2.Text = "HOCBA";
             // 
@@ -265,9 +265,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(31, 332);
+            label4.Location = new Point(65, 261);
             label4.Name = "label4";
-            label4.Size = new Size(495, 52);
+            label4.Size = new Size(403, 46);
             label4.TabIndex = 0;
             label4.Text = "Chào mừng các bạn đã đến với dự án mang tên \r\nquản lý tài khoản ngân hàng của nhóm Học Bá\r\n";
             // 
@@ -276,15 +276,15 @@
             label1.AutoSize = true;
             label1.Font = new Font("Impact", 28F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(31, 221);
+            label1.Location = new Point(65, 150);
             label1.Name = "label1";
-            label1.Size = new Size(94, 68);
+            label1.Size = new Size(80, 59);
             label1.TabIndex = 0;
             label1.Text = "HI!";
             // 
             // Frm_Login
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Teal;
             ClientSize = new Size(922, 720);

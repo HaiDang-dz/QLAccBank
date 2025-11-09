@@ -53,7 +53,7 @@ namespace QLAccBank
                 "Bạn có chắc chắn muốn hủy không?", "Xác nhận",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if (result == DialogResult.Yes)
+            if (result == DialogResult.No)
             {
                 // 🧹 Xóa toàn bộ nội dung trong textbox
                 txt_MatKhauCu.Clear();
@@ -63,7 +63,7 @@ namespace QLAccBank
                 // Đưa con trỏ về ô nhập đầu tiên (nếu muốn)
                 txt_MatKhauCu.Focus();
             }
-            // Nếu chọn No thì không làm gì cả
+            else this.Close();
         }
 
         private void Frm_Password_Load(object sender, EventArgs e)
