@@ -42,11 +42,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 163);
+            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label1.ForeColor = Color.LightSeaGreen;
             label1.Location = new Point(151, 11);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(212, 38);
+            label1.Size = new Size(226, 38);
             label1.TabIndex = 0;
             label1.Text = "ĐỔI MẬT KHẨU";
             // 
@@ -106,24 +107,28 @@
             // 
             // btt_DoiMatKhau2
             // 
+            btt_DoiMatKhau2.BackColor = Color.LightSeaGreen;
+            btt_DoiMatKhau2.ForeColor = Color.White;
             btt_DoiMatKhau2.Location = new Point(46, 361);
             btt_DoiMatKhau2.Margin = new Padding(4);
             btt_DoiMatKhau2.Name = "btt_DoiMatKhau2";
             btt_DoiMatKhau2.Size = new Size(208, 55);
             btt_DoiMatKhau2.TabIndex = 7;
             btt_DoiMatKhau2.Text = "Đổi mật khẩu ";
-            btt_DoiMatKhau2.UseVisualStyleBackColor = true;
+            btt_DoiMatKhau2.UseVisualStyleBackColor = false;
             btt_DoiMatKhau2.Click += btt_DoiMatKhau2_Click;
             // 
             // btt_Huy
             // 
+            btt_Huy.BackColor = Color.LightSeaGreen;
+            btt_Huy.ForeColor = Color.White;
             btt_Huy.Location = new Point(261, 361);
             btt_Huy.Margin = new Padding(4);
             btt_Huy.Name = "btt_Huy";
             btt_Huy.Size = new Size(208, 55);
             btt_Huy.TabIndex = 8;
             btt_Huy.Text = "Hủy ";
-            btt_Huy.UseVisualStyleBackColor = true;
+            btt_Huy.UseVisualStyleBackColor = false;
             btt_Huy.Click += btt_Huy_Click;
             // 
             // Frm_Password
@@ -131,7 +136,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(534, 474);
+            ClientSize = new Size(510, 474);
             Controls.Add(btt_Huy);
             Controls.Add(btt_DoiMatKhau2);
             Controls.Add(txt_NhapLaiMatKhau);

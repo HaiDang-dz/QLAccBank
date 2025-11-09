@@ -67,9 +67,8 @@ namespace QLAccBank
             bool isEmail = returnCustomer.IsEmail();
             if (isEmail)
             {
-                var (ho, ten) = myString.TachHoTen(txtHoTen.Text);
-                returnCustomer.LastName = ho;
-                returnCustomer.FirstName = ten;
+                returnCustomer.FirstName = txtHoTen.Text;
+                returnCustomer.LastName = txt_ten.Text;
                 returnCustomer.DOB = dateTimePickerDOB.Value.Date;
                 returnCustomer.PhoneNumber = txtSoDienThoai.Text;
                 returnCustomer.Gender = cboGioiTinh.Text;

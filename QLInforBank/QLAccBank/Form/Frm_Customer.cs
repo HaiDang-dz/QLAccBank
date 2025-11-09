@@ -14,6 +14,7 @@ namespace QLAccBank
     public partial class Frm_Customer : Form
     {
         List<Class.Customer> cusList = new List<Class.Customer>();
+        bool isUpdating = false; // ⚙️ flag chống vòng lặp
         public Frm_Customer()
         {
             InitializeComponent();
@@ -35,29 +36,41 @@ namespace QLAccBank
             dgv_customer.DataSource = cusList;
             bt_capnhat.Enabled = false;
         }
+
+
         private void txt_tim_TextChanged_1(object sender, EventArgs e)
         {
-            string filterText = txt_tim.Text.ToLower();
+            if (isUpdating) return; // tránh vòng lặp
+            isUpdating = true;
 
-            if (string.IsNullOrEmpty(filterText))
+            try
             {
-                dgv_customer.DataSource = cusList;
+                string filterText = txt_tim.Text.Trim().ToLower();
+
+                if (string.IsNullOrEmpty(filterText))
+                {
+                    dgv_customer.DataSource = cusList;
+                }
+                else
+                {
+                    var filtered = cusList.Where(c =>
+                        c.CustomerID.ToLower().Contains(filterText) ||
+                        c.FirstName.ToLower().Contains(filterText) ||
+                        c.LastName.ToLower().Contains(filterText) ||
+                        c.PhoneNumber.ToLower().Contains(filterText) ||
+                        c.Email.ToLower().Contains(filterText) ||
+                        c.IDCard.ToLower().Contains(filterText)
+                    ).ToList();
+
+                    dgv_customer.DataSource = filtered;
+                }
+
+                dgv_customer.Refresh();
             }
-            else
+            finally
             {
-                var filtered = cusList.Where(c =>
-                    c.CustomerID.ToLower().Contains(filterText) ||
-                    c.FirstName.ToLower().Contains(filterText) ||
-                    c.LastName.ToLower().Contains(filterText) ||
-                    c.PhoneNumber.ToLower().Contains(filterText) ||
-                    c.Email.ToLower().Contains(filterText) ||
-                    c.IDCard.ToLower().Contains(filterText)
-                ).ToList();
-
-                dgv_customer.DataSource = filtered;
+                isUpdating = false;
             }
-
-            dgv_customer.Refresh();
         }
         private string GenerateCustomerID()
         {
@@ -131,24 +144,33 @@ namespace QLAccBank
 
         private void dgv_customer_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex < 0) return;
+            if (isUpdating) return; // tránh gọi lại khi filter
+            isUpdating = true;
 
-            DataGridViewRow row = dgv_customer.Rows[e.RowIndex];
-            if (row == null) return;
+            try
+            {
+                if (e.RowIndex < 0) return;
+                DataGridViewRow row = dgv_customer.Rows[e.RowIndex];
+                if (row == null) return;
 
-            txt_hodem.Text = row.Cells["FirstName"].Value?.ToString() ?? "";
-            txt_ten.Text = row.Cells["LastName"].Value?.ToString() ?? "";
+                txt_hodem.Text = row.Cells["FirstName"].Value?.ToString() ?? "";
+                txt_ten.Text = row.Cells["LastName"].Value?.ToString() ?? "";
 
-            string gender = row.Cells["Gender"].Value?.ToString() ?? "";
-            comboBox_gioitinh.SelectedItem = (gender == "Nam" || gender == "Nữ") ? gender : null;
+                string gender = row.Cells["Gender"].Value?.ToString() ?? "";
+                comboBox_gioitinh.SelectedItem = (gender == "Nam" || gender == "Nữ") ? gender : null;
 
-            if (DateTime.TryParse(row.Cells["DOB"].Value?.ToString(), out DateTime dob))
-                dtp_ngaysinh.Value = dob;
+                if (DateTime.TryParse(row.Cells["DOB"].Value?.ToString(), out DateTime dob))
+                    dtp_ngaysinh.Value = dob;
 
-            txt_sdt.Text = row.Cells["PhoneNumber"].Value?.ToString() ?? "";
-            txt_email.Text = row.Cells["Email"].Value?.ToString() ?? "";
-            txt_diachi.Text = row.Cells["Address"].Value?.ToString() ?? "";
-            txt_cancuoc.Text = row.Cells["IDCard"].Value?.ToString() ?? "";
+                txt_sdt.Text = row.Cells["PhoneNumber"].Value?.ToString() ?? "";
+                txt_email.Text = row.Cells["Email"].Value?.ToString() ?? "";
+                txt_diachi.Text = row.Cells["Address"].Value?.ToString() ?? "";
+                txt_cancuoc.Text = row.Cells["IDCard"].Value?.ToString() ?? "";
+            }
+            finally
+            {
+                isUpdating = false;
+            }
         }
 
         private void btt_QLTK_Click(object sender, EventArgs e)

@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             tlp_qlttkh = new TableLayoutPanel();
             panel1 = new Panel();
+            bt_thoat = new Button();
             btt_QLTK = new Button();
             comboBox_gioitinh = new ComboBox();
             dtp_ngaysinh = new DateTimePicker();
@@ -62,7 +64,6 @@
             Address = new DataGridViewTextBoxColumn();
             IDCard = new DataGridViewTextBoxColumn();
             Action = new DataGridViewTextBoxColumn();
-            bt_thoat = new Button();
             tlp_qlttkh.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_customer).BeginInit();
@@ -88,6 +89,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.WhiteSmoke;
             panel1.Controls.Add(bt_thoat);
             panel1.Controls.Add(btt_QLTK);
             panel1.Controls.Add(comboBox_gioitinh);
@@ -117,15 +119,29 @@
             panel1.Size = new Size(1316, 393);
             panel1.TabIndex = 1;
             // 
+            // bt_thoat
+            // 
+            bt_thoat.BackColor = Color.LightSeaGreen;
+            bt_thoat.ForeColor = Color.White;
+            bt_thoat.Location = new Point(963, 331);
+            bt_thoat.Name = "bt_thoat";
+            bt_thoat.Size = new Size(138, 42);
+            bt_thoat.TabIndex = 9;
+            bt_thoat.Text = "Thoát";
+            bt_thoat.UseVisualStyleBackColor = false;
+            bt_thoat.Click += bt_thoat_Click;
+            // 
             // btt_QLTK
             // 
+            btt_QLTK.BackColor = Color.LightSeaGreen;
+            btt_QLTK.ForeColor = Color.White;
             btt_QLTK.Location = new Point(1125, 332);
             btt_QLTK.Margin = new Padding(2);
             btt_QLTK.Name = "btt_QLTK";
             btt_QLTK.Size = new Size(163, 42);
             btt_QLTK.TabIndex = 8;
             btt_QLTK.Text = "Quản Lí Tài khoản ";
-            btt_QLTK.UseVisualStyleBackColor = true;
+            btt_QLTK.UseVisualStyleBackColor = false;
             btt_QLTK.Click += btt_QLTK_Click;
             // 
             // comboBox_gioitinh
@@ -192,6 +208,8 @@
             // 
             label8.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9F);
+            label8.ForeColor = Color.Black;
             label8.Location = new Point(668, 215);
             label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
@@ -204,6 +222,8 @@
             // 
             label7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 9F);
+            label7.ForeColor = Color.Black;
             label7.Location = new Point(668, 159);
             label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
@@ -216,6 +236,8 @@
             // 
             label6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 9F);
+            label6.ForeColor = Color.Black;
             label6.Location = new Point(668, 104);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
@@ -238,6 +260,8 @@
             // 
             label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 9F);
+            label5.ForeColor = Color.Black;
             label5.Location = new Point(668, 51);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
@@ -260,6 +284,8 @@
             // 
             label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F);
+            label4.ForeColor = Color.Black;
             label4.Location = new Point(106, 218);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
@@ -281,6 +307,8 @@
             // 
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F);
+            label3.ForeColor = Color.Black;
             label3.Location = new Point(106, 159);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
@@ -291,19 +319,23 @@
             // 
             // bt_capnhat
             // 
+            bt_capnhat.BackColor = Color.LightSeaGreen;
+            bt_capnhat.ForeColor = Color.White;
             bt_capnhat.Location = new Point(794, 331);
             bt_capnhat.Margin = new Padding(2);
             bt_capnhat.Name = "bt_capnhat";
             bt_capnhat.Size = new Size(138, 42);
             bt_capnhat.TabIndex = 4;
             bt_capnhat.Text = "Cập nhật";
-            bt_capnhat.UseVisualStyleBackColor = true;
+            bt_capnhat.UseVisualStyleBackColor = false;
             bt_capnhat.Click += bt_capnhat_Click;
             // 
             // label2
             // 
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F);
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(106, 101);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
@@ -316,6 +348,8 @@
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F);
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(106, 48);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
@@ -326,19 +360,23 @@
             // 
             // bt_them
             // 
+            bt_them.BackColor = Color.LightSeaGreen;
+            bt_them.ForeColor = Color.White;
             bt_them.Location = new Point(607, 331);
             bt_them.Margin = new Padding(2);
             bt_them.Name = "bt_them";
             bt_them.Size = new Size(146, 42);
             bt_them.TabIndex = 4;
             bt_them.Text = "Thêm";
-            bt_them.UseVisualStyleBackColor = true;
+            bt_them.UseVisualStyleBackColor = false;
             bt_them.Click += bt_them_Click_1;
             // 
             // lb_tim
             // 
             lb_tim.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             lb_tim.AutoSize = true;
+            lb_tim.Font = new Font("Segoe UI", 9F);
+            lb_tim.ForeColor = Color.Black;
             lb_tim.Location = new Point(101, 340);
             lb_tim.Margin = new Padding(2, 0, 2, 0);
             lb_tim.Name = "lb_tim";
@@ -351,8 +389,17 @@
             // 
             dgv_customer.AllowUserToAddRows = false;
             dgv_customer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgv_customer.BackgroundColor = SystemColors.Window;
             dgv_customer.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgv_customer.Columns.AddRange(new DataGridViewColumn[] { CustomerID, FirstName, LastName, Gender, DOB, PhoneNumber, Email, Address, IDCard, Action });
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Window;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = Color.LightSeaGreen;
+            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
+            dgv_customer.DefaultCellStyle = dataGridViewCellStyle1;
             dgv_customer.Location = new Point(2, 399);
             dgv_customer.Margin = new Padding(2);
             dgv_customer.Name = "dgv_customer";
@@ -463,16 +510,6 @@
             Action.MinimumWidth = 8;
             Action.Name = "Action";
             Action.ReadOnly = true;
-            // 
-            // bt_thoat
-            // 
-            bt_thoat.Location = new Point(963, 331);
-            bt_thoat.Name = "bt_thoat";
-            bt_thoat.Size = new Size(138, 42);
-            bt_thoat.TabIndex = 9;
-            bt_thoat.Text = "Thoát";
-            bt_thoat.UseVisualStyleBackColor = true;
-            bt_thoat.Click += bt_thoat_Click;
             // 
             // Frm_Customer
             // 

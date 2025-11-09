@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
             dgv_HistoryBank = new DataGridView();
             TransactionID = new DataGridViewTextBoxColumn();
             CustomerID1 = new DataGridViewTextBoxColumn();
@@ -67,14 +68,14 @@
             dgv_HistoryBank.AllowUserToAddRows = false;
             dgv_HistoryBank.AllowUserToDeleteRows = false;
             dgv_HistoryBank.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = Color.FromArgb(0, 0, 192);
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgv_HistoryBank.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = SystemColors.Control;
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle6.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = Color.LightSeaGreen;
+            dataGridViewCellStyle6.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
+            dgv_HistoryBank.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             dgv_HistoryBank.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgv_HistoryBank.Columns.AddRange(new DataGridViewColumn[] { TransactionID, CustomerID1, AccountNumber1, TransactionType, Amount, Date, Note });
             dgv_HistoryBank.Dock = DockStyle.Fill;
@@ -92,8 +93,8 @@
             // 
             TransactionID.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             TransactionID.DataPropertyName = "TransactionID";
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopCenter;
-            TransactionID.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.TopCenter;
+            TransactionID.DefaultCellStyle = dataGridViewCellStyle7;
             TransactionID.HeaderText = "Mã giao dịch";
             TransactionID.MinimumWidth = 6;
             TransactionID.Name = "TransactionID";
@@ -104,8 +105,8 @@
             // 
             CustomerID1.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             CustomerID1.DataPropertyName = "CustomerID";
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.TopCenter;
-            CustomerID1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.TopCenter;
+            CustomerID1.DefaultCellStyle = dataGridViewCellStyle8;
             CustomerID1.HeaderText = "Mã KH";
             CustomerID1.MinimumWidth = 6;
             CustomerID1.Name = "CustomerID1";
@@ -126,8 +127,8 @@
             // 
             TransactionType.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             TransactionType.DataPropertyName = "TransactionType";
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.TopCenter;
-            TransactionType.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.TopCenter;
+            TransactionType.DefaultCellStyle = dataGridViewCellStyle9;
             TransactionType.HeaderText = "Kiểu chuyển khoản";
             TransactionType.MinimumWidth = 6;
             TransactionType.Name = "TransactionType";
@@ -171,10 +172,11 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(22, 34);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(201, 25);
+            label1.Size = new Size(218, 25);
             label1.TabIndex = 1;
             label1.Text = "Tìm thông tin tài khoản:";
             // 
@@ -204,6 +206,14 @@
             // 
             dgv_BankAccount.AllowUserToAddRows = false;
             dgv_BankAccount.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = SystemColors.Control;
+            dataGridViewCellStyle10.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle10.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = Color.LightSeaGreen;
+            dataGridViewCellStyle10.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle10.WrapMode = DataGridViewTriState.True;
+            dgv_BankAccount.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             dgv_BankAccount.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgv_BankAccount.Columns.AddRange(new DataGridViewColumn[] { AccountNumber, CustomerID, CustomerName, AccountType, Balance, OpenDate, IsActive });
             dgv_BankAccount.Dock = DockStyle.Fill;
@@ -294,11 +304,12 @@
             // lblFullName
             // 
             lblFullName.AutoSize = true;
-            lblFullName.ForeColor = Color.FromArgb(192, 0, 0);
+            lblFullName.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFullName.ForeColor = Color.Teal;
             lblFullName.Location = new Point(4, 36);
             lblFullName.Margin = new Padding(4, 0, 4, 0);
             lblFullName.Name = "lblFullName";
-            lblFullName.Size = new Size(148, 25);
+            lblFullName.Size = new Size(159, 25);
             lblFullName.TabIndex = 0;
             lblFullName.Text = "Lịch sử giao dịch:";
             lblFullName.TextAlign = ContentAlignment.MiddleLeft;
@@ -317,18 +328,21 @@
             // 
             // bt_quayve
             // 
+            bt_quayve.BackColor = Color.LightSeaGreen;
+            bt_quayve.ForeColor = Color.White;
             bt_quayve.Location = new Point(812, 33);
             bt_quayve.Name = "bt_quayve";
             bt_quayve.Size = new Size(121, 34);
             bt_quayve.TabIndex = 2;
             bt_quayve.Text = "Quay về";
-            bt_quayve.UseVisualStyleBackColor = true;
+            bt_quayve.UseVisualStyleBackColor = false;
             bt_quayve.Click += bt_quayve_Click;
             // 
             // Frm_AccountBank
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
             ClientSize = new Size(1924, 819);
             Controls.Add(tableLayoutPanel1);
             Margin = new Padding(4);

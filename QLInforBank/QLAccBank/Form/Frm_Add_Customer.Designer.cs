@@ -38,11 +38,13 @@
             txt_sotaikhoan = new TextBox();
             combobox_loaithe = new ComboBox();
             cboGioiTinh = new ComboBox();
+            label11 = new Label();
             label2 = new Label();
             dateTimePickerDOB = new DateTimePicker();
             label5 = new Label();
             txtDiaChi = new TextBox();
             txtEmail = new TextBox();
+            txt_ten = new TextBox();
             txtSoDienThoai = new TextBox();
             txtHoTen = new TextBox();
             label8 = new Label();
@@ -82,11 +84,13 @@
             groupBox1.Controls.Add(combobox_loaithe);
             groupBox1.Controls.Add(cboGioiTinh);
             groupBox1.Controls.Add(txtMaKhachHang);
+            groupBox1.Controls.Add(label11);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(dateTimePickerDOB);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(txtDiaChi);
             groupBox1.Controls.Add(txtEmail);
+            groupBox1.Controls.Add(txt_ten);
             groupBox1.Controls.Add(txtSoDienThoai);
             groupBox1.Controls.Add(txtHoTen);
             groupBox1.Controls.Add(label8);
@@ -106,24 +110,28 @@
             // 
             // btnHuy
             // 
+            btnHuy.BackColor = Color.LightSeaGreen;
             btnHuy.Font = new Font("Times New Roman", 15F);
+            btnHuy.ForeColor = Color.White;
             btnHuy.Location = new Point(448, 403);
             btnHuy.Name = "btnHuy";
             btnHuy.Size = new Size(148, 50);
             btnHuy.TabIndex = 8;
             btnHuy.Text = "Hủy";
-            btnHuy.UseVisualStyleBackColor = true;
+            btnHuy.UseVisualStyleBackColor = false;
             btnHuy.Click += btnHuy_Click;
             // 
             // btnXacNhan
             // 
+            btnXacNhan.BackColor = Color.LightSeaGreen;
             btnXacNhan.Font = new Font("Times New Roman", 15F);
+            btnXacNhan.ForeColor = Color.White;
             btnXacNhan.Location = new Point(222, 403);
             btnXacNhan.Name = "btnXacNhan";
             btnXacNhan.Size = new Size(148, 50);
             btnXacNhan.TabIndex = 8;
             btnXacNhan.Text = "Xác nhận";
-            btnXacNhan.UseVisualStyleBackColor = true;
+            btnXacNhan.UseVisualStyleBackColor = false;
             btnXacNhan.Click += btnXacNhan_Click;
             // 
             // txtSoCanCuoc
@@ -144,6 +152,7 @@
             // 
             // txt_sotaikhoan
             // 
+            txt_sotaikhoan.Enabled = false;
             txt_sotaikhoan.Location = new Point(337, 170);
             txt_sotaikhoan.Margin = new Padding(3, 4, 3, 4);
             txt_sotaikhoan.Name = "txt_sotaikhoan";
@@ -171,14 +180,23 @@
             cboGioiTinh.Size = new Size(182, 30);
             cboGioiTinh.TabIndex = 3;
             // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(219, 55);
+            label11.Name = "label11";
+            label11.Size = new Size(41, 23);
+            label11.TabIndex = 0;
+            label11.Text = "Tên";
+            // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(20, 53);
             label2.Name = "label2";
-            label2.Size = new Size(90, 23);
+            label2.Size = new Size(77, 23);
             label2.TabIndex = 0;
-            label2.Text = "Họ và tên";
+            label2.Text = "Họ đệm";
             // 
             // dateTimePickerDOB
             // 
@@ -216,6 +234,14 @@
             txtEmail.Size = new Size(264, 31);
             txtEmail.TabIndex = 7;
             // 
+            // txt_ten
+            // 
+            txt_ten.Location = new Point(219, 82);
+            txt_ten.Margin = new Padding(3, 4, 3, 4);
+            txt_ten.Name = "txt_ten";
+            txt_ten.Size = new Size(65, 31);
+            txt_ten.TabIndex = 2;
+            // 
             // txtSoDienThoai
             // 
             txtSoDienThoai.Location = new Point(20, 169);
@@ -229,7 +255,7 @@
             txtHoTen.Location = new Point(20, 82);
             txtHoTen.Margin = new Padding(3, 4, 3, 4);
             txtHoTen.Name = "txtHoTen";
-            txtHoTen.Size = new Size(264, 31);
+            txtHoTen.Size = new Size(193, 31);
             txtHoTen.TabIndex = 2;
             // 
             // label8
@@ -290,6 +316,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
             ClientSize = new Size(863, 495);
             Controls.Add(groupBox1);
             Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -325,5 +352,7 @@
         public TextBox txt_sotaikhoan;
         private ComboBox combobox_loaithe;
         private Label label10;
+        private Label label11;
+        private TextBox txt_ten;
     }
 }

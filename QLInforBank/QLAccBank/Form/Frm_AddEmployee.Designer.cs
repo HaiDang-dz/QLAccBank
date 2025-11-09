@@ -53,7 +53,7 @@
             // datetime_NgayVao
             // 
             datetime_NgayVao.Location = new Point(166, 509);
-            datetime_NgayVao.Margin = new Padding(4, 4, 4, 4);
+            datetime_NgayVao.Margin = new Padding(4);
             datetime_NgayVao.Name = "datetime_NgayVao";
             datetime_NgayVao.Size = new Size(365, 31);
             datetime_NgayVao.TabIndex = 7;
@@ -61,7 +61,7 @@
             // txt_ChucVu
             // 
             txt_ChucVu.Location = new Point(166, 444);
-            txt_ChucVu.Margin = new Padding(4, 4, 4, 4);
+            txt_ChucVu.Margin = new Padding(4);
             txt_ChucVu.Name = "txt_ChucVu";
             txt_ChucVu.Size = new Size(365, 31);
             txt_ChucVu.TabIndex = 6;
@@ -69,7 +69,7 @@
             // txt_SDT
             // 
             txt_SDT.Location = new Point(166, 379);
-            txt_SDT.Margin = new Padding(4, 4, 4, 4);
+            txt_SDT.Margin = new Padding(4);
             txt_SDT.MaxLength = 10;
             txt_SDT.Name = "txt_SDT";
             txt_SDT.Size = new Size(365, 31);
@@ -78,7 +78,7 @@
             // txt_Email
             // 
             txt_Email.Location = new Point(166, 306);
-            txt_Email.Margin = new Padding(4, 4, 4, 4);
+            txt_Email.Margin = new Padding(4);
             txt_Email.Name = "txt_Email";
             txt_Email.Size = new Size(365, 31);
             txt_Email.TabIndex = 4;
@@ -86,7 +86,7 @@
             // txt_HoVaTen
             // 
             txt_HoVaTen.Location = new Point(166, 241);
-            txt_HoVaTen.Margin = new Padding(4, 4, 4, 4);
+            txt_HoVaTen.Margin = new Padding(4);
             txt_HoVaTen.Name = "txt_HoVaTen";
             txt_HoVaTen.Size = new Size(365, 31);
             txt_HoVaTen.TabIndex = 3;
@@ -144,11 +144,12 @@
             // lbe_ThongTinNhanVien
             // 
             lbe_ThongTinNhanVien.AutoSize = true;
-            lbe_ThongTinNhanVien.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            lbe_ThongTinNhanVien.Location = new Point(266, 11);
+            lbe_ThongTinNhanVien.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            lbe_ThongTinNhanVien.ForeColor = Color.LightSeaGreen;
+            lbe_ThongTinNhanVien.Location = new Point(266, 35);
             lbe_ThongTinNhanVien.Margin = new Padding(4, 0, 4, 0);
             lbe_ThongTinNhanVien.Name = "lbe_ThongTinNhanVien";
-            lbe_ThongTinNhanVien.Size = new Size(375, 32);
+            lbe_ThongTinNhanVien.Size = new Size(406, 32);
             lbe_ThongTinNhanVien.TabIndex = 19;
             lbe_ThongTinNhanVien.Text = "ĐĂNG KÝ TÀI KHOẢN NHÂN VIÊN";
             // 
@@ -156,7 +157,7 @@
             // 
             pic_Avatar.Image = Properties.Resources.default_avatar;
             pic_Avatar.Location = new Point(609, 126);
-            pic_Avatar.Margin = new Padding(4, 4, 4, 4);
+            pic_Avatar.Margin = new Padding(4);
             pic_Avatar.Name = "pic_Avatar";
             pic_Avatar.Size = new Size(251, 286);
             pic_Avatar.SizeMode = PictureBoxSizeMode.Zoom;
@@ -186,7 +187,7 @@
             // txt_TenDangNhap
             // 
             txt_TenDangNhap.Location = new Point(166, 121);
-            txt_TenDangNhap.Margin = new Padding(4, 4, 4, 4);
+            txt_TenDangNhap.Margin = new Padding(4);
             txt_TenDangNhap.Name = "txt_TenDangNhap";
             txt_TenDangNhap.Size = new Size(365, 31);
             txt_TenDangNhap.TabIndex = 1;
@@ -194,48 +195,55 @@
             // txt_MatKhau
             // 
             txt_MatKhau.Location = new Point(166, 178);
-            txt_MatKhau.Margin = new Padding(4, 4, 4, 4);
+            txt_MatKhau.Margin = new Padding(4);
             txt_MatKhau.Name = "txt_MatKhau";
             txt_MatKhau.Size = new Size(365, 31);
             txt_MatKhau.TabIndex = 2;
             // 
             // btt_Luu
             // 
+            btt_Luu.BackColor = Color.LightSeaGreen;
+            btt_Luu.ForeColor = Color.White;
             btt_Luu.Location = new Point(294, 594);
-            btt_Luu.Margin = new Padding(4, 4, 4, 4);
+            btt_Luu.Margin = new Padding(4);
             btt_Luu.Name = "btt_Luu";
             btt_Luu.Size = new Size(136, 55);
             btt_Luu.TabIndex = 9;
             btt_Luu.Text = "Lưu";
-            btt_Luu.UseVisualStyleBackColor = true;
+            btt_Luu.UseVisualStyleBackColor = false;
             btt_Luu.Click += btt_Luu_Click;
             // 
             // btt_Huy
             // 
+            btt_Huy.BackColor = Color.LightSeaGreen;
+            btt_Huy.ForeColor = Color.White;
             btt_Huy.Location = new Point(479, 594);
-            btt_Huy.Margin = new Padding(4, 4, 4, 4);
+            btt_Huy.Margin = new Padding(4);
             btt_Huy.Name = "btt_Huy";
             btt_Huy.Size = new Size(136, 55);
             btt_Huy.TabIndex = 10;
             btt_Huy.Text = "Hủy";
-            btt_Huy.UseVisualStyleBackColor = true;
+            btt_Huy.UseVisualStyleBackColor = false;
             btt_Huy.Click += btt_Huy_Click;
             // 
             // btt_ChonHinhAnh
             // 
+            btt_ChonHinhAnh.BackColor = Color.LightSeaGreen;
+            btt_ChonHinhAnh.ForeColor = Color.White;
             btt_ChonHinhAnh.Location = new Point(609, 468);
-            btt_ChonHinhAnh.Margin = new Padding(4, 4, 4, 4);
+            btt_ChonHinhAnh.Margin = new Padding(4);
             btt_ChonHinhAnh.Name = "btt_ChonHinhAnh";
             btt_ChonHinhAnh.Size = new Size(251, 55);
             btt_ChonHinhAnh.TabIndex = 8;
             btt_ChonHinhAnh.Text = "Chọn hình ảnh";
-            btt_ChonHinhAnh.UseVisualStyleBackColor = true;
+            btt_ChonHinhAnh.UseVisualStyleBackColor = false;
             btt_ChonHinhAnh.Click += btt_ChonHinhAnh_Click;
             // 
             // Frm_AddEmployee
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
             ClientSize = new Size(892, 685);
             Controls.Add(btt_ChonHinhAnh);
             Controls.Add(btt_Huy);
@@ -256,7 +264,7 @@
             Controls.Add(lbe_HoVaTen);
             Controls.Add(lbe_ThongTinNhanVien);
             Controls.Add(pic_Avatar);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Frm_AddEmployee";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Đăng Ký Tài Khoản";

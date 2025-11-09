@@ -159,5 +159,45 @@ namespace QLAccBank.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap qrcode_273465740_8fa7adbf6dacb3ee1bf3339e4f30b7b5 {
+            get {
+                object obj = ResourceManager.GetObject("qrcode_273465740_8fa7adbf6dacb3ee1bf3339e4f30b7b5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap qrcode_273465740_8fa7adbf6dacb3ee1bf3339e4f30b7b5__1_ {
+            get {
+                object obj = ResourceManager.GetObject("qrcode_273465740_8fa7adbf6dacb3ee1bf3339e4f30b7b5 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap qrcode_273473963_a9324a39fb640b3afb54072243cc7f29 {
+            get {
+                object obj = ResourceManager.GetObject("qrcode_273473963_a9324a39fb640b3afb54072243cc7f29", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z7205585253940_3f1e9c92e0c38c43a99db849e0b25b4c {
+            get {
+                object obj = ResourceManager.GetObject("z7205585253940_3f1e9c92e0c38c43a99db849e0b25b4c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

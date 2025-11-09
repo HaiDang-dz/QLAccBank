@@ -20,7 +20,8 @@ namespace QLAccBank
             txt_password.Text = "";
             txt_username.Focus(); // đưa con trỏ về ô username
         }
-        private void bt_login_Click(object sender, EventArgs e)
+       
+        private void bt_login_Click_1(object sender, EventArgs e)
         {
             string username = txt_username.Text.Trim();
             string password = txt_password.Text.Trim();
@@ -77,8 +78,7 @@ namespace QLAccBank
             }
         }
 
-
-        private void bt_exit_Click(object sender, EventArgs e)
+        private void bt_exit_Click_1(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có chắc muốn thoát?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
