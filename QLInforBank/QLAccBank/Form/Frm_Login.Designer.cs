@@ -49,10 +49,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.people;
-            pictureBox1.Location = new Point(96, 48);
+            pictureBox1.Location = new Point(120, 60);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(86, 71);
+            pictureBox1.Size = new Size(108, 89);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -62,29 +62,29 @@
             panel1.Controls.Add(txt_username);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(pictureBox2);
-            panel1.Location = new Point(12, 137);
+            panel1.Location = new Point(15, 171);
             panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(251, 25);
+            panel1.Size = new Size(314, 31);
             panel1.TabIndex = 0;
             // 
             // txt_username
             // 
             txt_username.BackColor = SystemColors.ButtonFace;
             txt_username.BorderStyle = BorderStyle.None;
-            txt_username.Location = new Point(24, -1);
+            txt_username.Location = new Point(30, -1);
             txt_username.Margin = new Padding(2);
             txt_username.Name = "txt_username";
-            txt_username.Size = new Size(222, 20);
+            txt_username.Size = new Size(278, 24);
             txt_username.TabIndex = 0;
             // 
             // panel2
             // 
             panel2.BackColor = Color.Black;
-            panel2.Location = new Point(2, 19);
+            panel2.Location = new Point(2, 24);
             panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(246, 1);
+            panel2.Size = new Size(308, 1);
             panel2.TabIndex = 1;
             // 
             // pictureBox2
@@ -93,7 +93,7 @@
             pictureBox2.Location = new Point(0, 0);
             pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(20, 18);
+            pictureBox2.Size = new Size(25, 22);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
@@ -103,30 +103,30 @@
             panel3.Controls.Add(txt_password);
             panel3.Controls.Add(panel4);
             panel3.Controls.Add(pictureBox3);
-            panel3.Location = new Point(12, 174);
+            panel3.Location = new Point(15, 218);
             panel3.Margin = new Padding(2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(251, 25);
+            panel3.Size = new Size(314, 31);
             panel3.TabIndex = 1;
             // 
             // txt_password
             // 
             txt_password.BackColor = SystemColors.ButtonFace;
             txt_password.BorderStyle = BorderStyle.None;
-            txt_password.Location = new Point(24, -1);
+            txt_password.Location = new Point(30, -1);
             txt_password.Margin = new Padding(2);
             txt_password.Name = "txt_password";
             txt_password.PasswordChar = '*';
-            txt_password.Size = new Size(222, 20);
+            txt_password.Size = new Size(278, 24);
             txt_password.TabIndex = 0;
             // 
             // panel4
             // 
             panel4.BackColor = Color.Black;
-            panel4.Location = new Point(2, 19);
+            panel4.Location = new Point(2, 24);
             panel4.Margin = new Padding(2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(246, 1);
+            panel4.Size = new Size(308, 1);
             panel4.TabIndex = 1;
             // 
             // pictureBox3
@@ -135,7 +135,7 @@
             pictureBox3.Location = new Point(0, 0);
             pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(20, 18);
+            pictureBox3.Size = new Size(25, 22);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
@@ -143,10 +143,10 @@
             // bt_login
             // 
             bt_login.BackColor = SystemColors.ControlDark;
-            bt_login.Location = new Point(10, 222);
+            bt_login.Location = new Point(12, 278);
             bt_login.Margin = new Padding(2);
             bt_login.Name = "bt_login";
-            bt_login.Size = new Size(254, 39);
+            bt_login.Size = new Size(318, 49);
             bt_login.TabIndex = 2;
             bt_login.Text = "Login";
             bt_login.UseVisualStyleBackColor = false;
@@ -155,10 +155,10 @@
             // bt_exit
             // 
             bt_exit.BackColor = SystemColors.ButtonShadow;
-            bt_exit.Location = new Point(12, 273);
+            bt_exit.Location = new Point(15, 341);
             bt_exit.Margin = new Padding(2);
             bt_exit.Name = "bt_exit";
-            bt_exit.Size = new Size(251, 39);
+            bt_exit.Size = new Size(314, 49);
             bt_exit.TabIndex = 3;
             bt_exit.Text = "Exit";
             bt_exit.UseVisualStyleBackColor = false;
@@ -166,9 +166,9 @@
             // 
             // Frm_Login
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(273, 363);
+            ClientSize = new Size(341, 454);
             Controls.Add(bt_exit);
             Controls.Add(bt_login);
             Controls.Add(panel3);
@@ -178,7 +178,7 @@
             MaximizeBox = false;
             Name = "Frm_Login";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Frm_Login";
+            Text = "Đăng Nhập";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

@@ -235,7 +235,7 @@
             MaximizeBox = false;
             Name = "Frm_Members";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Frm_Members";
+            Text = "Trang Nhân Viên";
             Load += Frm_Members_Load;
             ((System.ComponentModel.ISupportInitialize)pic_Avatar).EndInit();
             ResumeLayout(false);

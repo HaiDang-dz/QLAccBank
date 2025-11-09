@@ -54,6 +54,7 @@
             panelSinhVien = new Panel();
             lblFullName = new Label();
             panel1 = new Panel();
+            bt_quayve = new Button();
             ((System.ComponentModel.ISupportInitialize)dgv_HistoryBank).BeginInit();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_BankAccount).BeginInit();
@@ -160,8 +161,8 @@
             // 
             // txt_Tim
             // 
-            txt_Tim.Location = new Point(372, 29);
-            txt_Tim.Margin = new Padding(4, 4, 4, 4);
+            txt_Tim.Location = new Point(231, 34);
+            txt_Tim.Margin = new Padding(4);
             txt_Tim.Name = "txt_Tim";
             txt_Tim.Size = new Size(539, 31);
             txt_Tim.TabIndex = 0;
@@ -207,7 +208,7 @@
             dgv_BankAccount.Columns.AddRange(new DataGridViewColumn[] { AccountNumber, CustomerID, CustomerName, AccountType, Balance, OpenDate, IsActive });
             dgv_BankAccount.Dock = DockStyle.Fill;
             dgv_BankAccount.Location = new Point(4, 88);
-            dgv_BankAccount.Margin = new Padding(4, 4, 4, 4);
+            dgv_BankAccount.Margin = new Padding(4);
             dgv_BankAccount.Name = "dgv_BankAccount";
             dgv_BankAccount.ReadOnly = true;
             dgv_BankAccount.RowHeadersWidth = 51;
@@ -304,14 +305,25 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(bt_quayve);
             panel1.Controls.Add(txt_Tim);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(4, 4);
-            panel1.Margin = new Padding(4, 4, 4, 4);
+            panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
             panel1.Size = new Size(996, 76);
             panel1.TabIndex = 3;
+            // 
+            // bt_quayve
+            // 
+            bt_quayve.Location = new Point(812, 33);
+            bt_quayve.Name = "bt_quayve";
+            bt_quayve.Size = new Size(121, 34);
+            bt_quayve.TabIndex = 2;
+            bt_quayve.Text = "Quay về";
+            bt_quayve.UseVisualStyleBackColor = true;
+            bt_quayve.Click += bt_quayve_Click;
             // 
             // Frm_AccountBank
             // 
@@ -319,7 +331,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1924, 819);
             Controls.Add(tableLayoutPanel1);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Frm_AccountBank";
             Text = "Thông tin tài khoản";
             WindowState = FormWindowState.Maximized;
@@ -357,5 +369,6 @@
         private DataGridViewTextBoxColumn Amount;
         private DataGridViewTextBoxColumn Date;
         private DataGridViewTextBoxColumn Note;
+        private Button bt_quayve;
     }
 }

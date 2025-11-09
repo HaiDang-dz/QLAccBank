@@ -43,65 +43,73 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            label1.Location = new Point(121, 9);
+            label1.Location = new Point(151, 11);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(173, 31);
+            label1.Size = new Size(212, 38);
             label1.TabIndex = 0;
             label1.Text = "ĐỔI MẬT KHẨU";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(10, 78);
+            label2.Location = new Point(12, 98);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(96, 20);
+            label2.Size = new Size(118, 25);
             label2.TabIndex = 1;
             label2.Text = "Mật khẩu cũ: ";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(10, 136);
+            label3.Location = new Point(12, 170);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(107, 20);
+            label3.Size = new Size(131, 25);
             label3.TabIndex = 2;
             label3.Text = "Mật khẩu mới: ";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(10, 201);
+            label4.Location = new Point(12, 251);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(137, 20);
+            label4.Size = new Size(165, 25);
             label4.TabIndex = 3;
             label4.Text = "Nhập lại mật khẩu: ";
             // 
             // txt_MatKhauCu
             // 
-            txt_MatKhauCu.Location = new Point(151, 71);
+            txt_MatKhauCu.Location = new Point(189, 89);
+            txt_MatKhauCu.Margin = new Padding(4);
             txt_MatKhauCu.Name = "txt_MatKhauCu";
-            txt_MatKhauCu.Size = new Size(242, 27);
+            txt_MatKhauCu.Size = new Size(302, 31);
             txt_MatKhauCu.TabIndex = 4;
             // 
             // txt_MatKhauMoi
             // 
-            txt_MatKhauMoi.Location = new Point(151, 129);
+            txt_MatKhauMoi.Location = new Point(189, 161);
+            txt_MatKhauMoi.Margin = new Padding(4);
             txt_MatKhauMoi.Name = "txt_MatKhauMoi";
-            txt_MatKhauMoi.Size = new Size(242, 27);
+            txt_MatKhauMoi.Size = new Size(302, 31);
             txt_MatKhauMoi.TabIndex = 5;
             // 
             // txt_NhapLaiMatKhau
             // 
-            txt_NhapLaiMatKhau.Location = new Point(151, 198);
+            txt_NhapLaiMatKhau.Location = new Point(189, 248);
+            txt_NhapLaiMatKhau.Margin = new Padding(4);
             txt_NhapLaiMatKhau.Name = "txt_NhapLaiMatKhau";
-            txt_NhapLaiMatKhau.Size = new Size(242, 27);
+            txt_NhapLaiMatKhau.Size = new Size(302, 31);
             txt_NhapLaiMatKhau.TabIndex = 6;
             // 
             // btt_DoiMatKhau2
             // 
-            btt_DoiMatKhau2.Location = new Point(37, 289);
+            btt_DoiMatKhau2.Location = new Point(46, 361);
+            btt_DoiMatKhau2.Margin = new Padding(4);
             btt_DoiMatKhau2.Name = "btt_DoiMatKhau2";
-            btt_DoiMatKhau2.Size = new Size(166, 44);
+            btt_DoiMatKhau2.Size = new Size(208, 55);
             btt_DoiMatKhau2.TabIndex = 7;
             btt_DoiMatKhau2.Text = "Đổi mật khẩu ";
             btt_DoiMatKhau2.UseVisualStyleBackColor = true;
@@ -109,9 +117,10 @@
             // 
             // btt_Huy
             // 
-            btt_Huy.Location = new Point(209, 289);
+            btt_Huy.Location = new Point(261, 361);
+            btt_Huy.Margin = new Padding(4);
             btt_Huy.Name = "btt_Huy";
-            btt_Huy.Size = new Size(166, 44);
+            btt_Huy.Size = new Size(208, 55);
             btt_Huy.TabIndex = 8;
             btt_Huy.Text = "Hủy ";
             btt_Huy.UseVisualStyleBackColor = true;
@@ -119,9 +128,10 @@
             // 
             // Frm_Password
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(427, 431);
+            BackColor = Color.WhiteSmoke;
+            ClientSize = new Size(534, 474);
             Controls.Add(btt_Huy);
             Controls.Add(btt_DoiMatKhau2);
             Controls.Add(txt_NhapLaiMatKhau);
@@ -131,9 +141,10 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(4);
             Name = "Frm_Password";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Frm_Password";
+            Text = "Đổi Mật Khẩu";
             Load += Frm_Password_Load;
             ResumeLayout(false);
             PerformLayout();

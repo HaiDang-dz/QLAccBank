@@ -295,7 +295,7 @@
             Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "Frm_Add_Customer";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Thêm khách hàng ";
+            Text = "Thêm Khách Hàng";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
